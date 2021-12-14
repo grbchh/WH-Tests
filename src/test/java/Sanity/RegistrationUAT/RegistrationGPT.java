@@ -70,6 +70,7 @@ public class RegistrationGPT {
             System.out.println("Registration passed, here your email:" + Creds.getEmail());
             System.out.println("Verified user registered! Yay!");
         }
+
         else if ($(Button.getAfterRegiUnactiveDocUploadButton()).isDisplayed())
         {
             System.out.println("Registration passed, here your email:" + Creds.getEmail());

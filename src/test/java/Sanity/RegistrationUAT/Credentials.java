@@ -8,18 +8,18 @@ public class Credentials {
 
 //     private String email = "qa__"+"r390gt"+"@neogames.com";
 //    private String email = "qa_"+"heh"+"@neogames.com";
-    private String email = "achachhachac@neogames.com";
+    private String email = "DepositMaster@neogames.com";
 
     //_______________________________________________________________________________________________________________
     private String phoneNumber =  "380" + randomNumberGenerator.PhoneNumber();
-//    private String phoneNumber =  "3800495934";
+//    private String phoneNumber =  "6082926307";
     //_______________________________________________________________________________________________________________
     private String username = "Cores";
     private String surname = "Cheryl";
     private String address = "9884 21 June St";
     private String city = "Keene";
     private String zipCode = "59201";
-    private String ssn = "0294";
+    private String ssn = "1379";
     //_______________________________________________________________________________________________________________
     private int birthdayMonth = 6;
     private int birthdayDay = 6;

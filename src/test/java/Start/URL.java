@@ -8,12 +8,18 @@ public class URL {
     //Info
     Links RunTestOn = new Links();
     Credentials RegiGPT = new Credentials();
+
+
     ///////////////
-    private String Link = RunTestOn.getNyCert();
+    private String Link = RunTestOn.getOnGpt();
 //    private String LoginEmail = "oleksandrh@neogames.com";
       private String LoginEmail = RegiGPT.getEmail();
 
     ///////GETTERS
+
+    public Links getRunTestOn() {
+        return RunTestOn;
+    }
 
     public String getLoginEmail() {
         return LoginEmail;

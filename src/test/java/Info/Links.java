@@ -54,7 +54,23 @@ public class Links {
     private String NyCert = ("https://usc.williamhill-test.com/us/ny/bet");
     private String NyProd = ("https://internalprod.us.williamhill.com/us/ny/bet");
     //__________________________________________________________________________________________________________________
+    private String OnGpt = ("https://gpt.williamhill-test.com/us/on/bet");
+    private String OnCert = ("https://usc.williamhill-test.com/us/on/bet");
+    private String OnProd = ("https://internalprod.us.williamhill.com/us/on/bet");
+    //__________________________________________________________________________________________________________________
 
+
+    public String getOnGpt() {
+        return OnGpt;
+    }
+
+    public String getOnCert() {
+        return OnCert;
+    }
+
+    public String getOnProd() {
+        return OnProd;
+    }
 
     public String getNyGpt() {
         return NyGpt;
