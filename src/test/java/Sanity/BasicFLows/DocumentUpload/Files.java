@@ -9,8 +9,8 @@ import static com.codeborne.selenide.Selenide.$;
 
 
 public class Files {
-    File jpg = new File("C:\\Users\\oleksandrh\\Desktop\\upload", "jpg.jpg");
-    File pdf = new File("C:\\Users\\oleksandrh\\Desktop\\upload", "pdf.pdf");
+    File jpg = new File("C:\\Users\\oleksandrh\\Documents\\upload\\jpg.jpg", "jpg.jpg");
+    File pdf = new File("C:\\Users\\oleksandrh\\Documents\\upload\\pdf.pdf", "pdf.pdf");
 
     public File getJpg() {
         return jpg;

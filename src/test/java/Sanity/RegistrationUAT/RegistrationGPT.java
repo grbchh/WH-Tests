@@ -24,29 +24,56 @@ public class RegistrationGPT {
 
         //First Registration Page
         $(Button.getRegiButton()).shouldBe(Condition.enabled).click();
+
+        //Name
+        System.out.println("Typing name...");
         $(Button.getFirstNameField()).setValue(Creds.getUsername());
         $(Button.getLastNameField()).setValue(Creds.getSurname());
+
+        //Email
+        System.out.println("Typing email...");
         $(Button.getEmailField()).setValue(Creds.getEmail());
+
+        //Gender
+        System.out.println("Picking gender...");
+        if ($(Button.getGenderDropdown()).isDisplayed()) {
+            $(Button.getGenderDropdown()).selectOptionContainingText("Non-Binary");
+        }
+
         //DOB
+        System.out.println("Entering date of birth...");
         $(Button.getBirthdayMonthDropdown()).selectOption(Creds.getBirthdayMonth());
         $(Button.getBirthdayDayDropdown()).selectOption(Creds.getBirthdayDay());
         $(Button.getBirthdayYearDropdown()).selectOption(Creds.getBirthdayYear());
 
+        //Phone Number
+        System.out.println("Typing phone number...");
         $(Button.getCellPhoneField()).setValue(Creds.getPhoneNumber());
+
+        //"Next" button
         $(Button.getNextRegiStepButton()).click();
         System.out.println("1st page is filled with info");
 
         //Second Registration Page
+        System.out.println("Entering stronk password...");
         $(Button.getPasswordField()).setValue("test1234");
+
         //dropdown 1st question
+        System.out.println("Typing first secret question...");
         $(Button.getSecurityQuestionDropdown1()).click();
         $(Button.getSecurityQuestionField1()).setValue(Creds.getAnswerSecurityQs0());
+
         //dropdown 2nd question
+        System.out.println("Typing second secret question...");
         $(Button.getSecurityQuestionDropdown2()).click();
         $(Button.getSecurityQuestionField2()).setValue(Creds.getAnswerSecurityQs1());
+
         //ssn
+        System.out.println("Typing SSN...");
         $(Button.getSsnField()).setValue(Creds.getSsn());
+
         //adress
+        System.out.println("Typing adress...");
         $(Button.getAdressField()).setValue(Creds.getAddress());
         $(Button.getCityField()).setValue(Creds.getCity());
         $(Button.getZipCodeField()).setValue(Creds.getZipCode());
@@ -59,26 +86,27 @@ public class RegistrationGPT {
         $(Button.getAgreementCheckbox4()).click();
         System.out.println("Checkboxes ticked");
 
-
+        // Final Submit Button
         $(Button.getFinishRegiButton()).shouldBe(Condition.visible).click();
         System.out.println("Submit button pressed");
 
+        //Something I need to set wait to, so webdriver dont start verification instantly
         $((Button.getBackButton())).should(disappear);
-//        sleep(5000);//????????????????????????????
+
+        //This is verification of account type created
         if($(Button.getAfterRegiDepositButton()).isDisplayed())
         {
-            System.out.println("Registration passed, here your email:" + Creds.getEmail());
+            System.out.println("Registration passed, here your email:    " + Creds.getEmail());
             System.out.println("Verified user registered! Yay!");
         }
-
         else if ($(Button.getAfterRegiUnactiveDocUploadButton()).isDisplayed())
         {
-            System.out.println("Registration passed, here your email:" + Creds.getEmail());
+            System.out.println("Registration passed, here your email:    " + Creds.getEmail());
             System.out.println("Unverified user registrated! Noice!");
         }
         else {
             System.out.println("lol, bro, idk");
-            sleep(1000000);
+            Configuration.holdBrowserOpen = true;
         }
     }
 

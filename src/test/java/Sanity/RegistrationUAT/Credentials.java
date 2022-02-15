@@ -6,20 +6,21 @@ import Tools.RandomNumberGenerator;
 public class Credentials {
     RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
 
-//     private String email = "qa__"+"r390gt"+"@neogames.com";
+//     private String email = "qa__"+"Zefirka"+"@neogames.com";
 //    private String email = "qa_"+"heh"+"@neogames.com";
-    private String email = "DepositMaster@neogames.com";
+    private String email = "DepositMaster2@neogames.com";
+//    private String email = "R1U3@neogames.com";
 
     //_______________________________________________________________________________________________________________
     private String phoneNumber =  "380" + randomNumberGenerator.PhoneNumber();
 //    private String phoneNumber =  "6082926307";
     //_______________________________________________________________________________________________________________
-    private String username = "Cores";
-    private String surname = "Cheryl";
-    private String address = "9884 21 June St";
-    private String city = "Keene";
-    private String zipCode = "59201";
-    private String ssn = "1379";
+    private String username="NeoTA03";
+    private String surname="Release-01";
+    private String address="haha street";
+    private String city="hehe city";
+    private String zipCode="00000";
+    private String ssn="0000";
     //_______________________________________________________________________________________________________________
     private int birthdayMonth = 6;
     private int birthdayDay = 6;

@@ -5,12 +5,13 @@ public class Buttons {
     private String firstNameField = "#firstname";
     private String lastNameField = "#lastName";
     private String emailField = "#email";
+    private String GenderDropdown = "#gender";
     private String nextRegiStepButton = "button.mwc-primary-button:nth-child(1)";
     private String finishRegiButton = "button.mwc-primary-button:nth-child(1)";
     private String passwordField = "#password";
     private String securityQuestionField1 = "#answerSecurityQs0";
     private String securityQuestionField2 = "#answerSecurityQs1";
-    private String ssnField = "div.mwc-reg-form-field:nth-child(5) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)";
+    private String ssnField = "#PersonNationalID";
     private String adressField = "#address";
     private String birthdayMonthDropdown = "#birthdayMonth";
     private String birthdayDayDropdown = "#birthdayDay";
@@ -130,5 +131,9 @@ public class Buttons {
 
     public String getBackButton() {
         return BackButton;
+    }
+
+    public String getGenderDropdown() {
+        return GenderDropdown;
     }
 }

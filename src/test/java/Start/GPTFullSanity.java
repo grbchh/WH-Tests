@@ -32,16 +32,11 @@ public class GPTFullSanity {
 //        login.flow();
     }
 
-    @After
+//    @After
     public void ShutDown(){
 
 //        logout.flow();
     }
-
-
-
-
-
 
     @Test
     public void Registration() {

@@ -2,6 +2,7 @@ package Sanity.BasicFLows.Login;
 
 import Start.URL;
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.junit.Test;
 
@@ -17,6 +18,7 @@ public class Login {
 
     @Test
     public void flow() {
+        Configuration.timeout = 150000;
         Selenide.open(run.getLink());
         $(btn.getLoginButton()).shouldBe(enabled).click();
         $(btn.getEmailFiled()).shouldBe(enabled).setValue(creds.getLoginEmail());

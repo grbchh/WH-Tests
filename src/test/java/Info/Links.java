@@ -32,7 +32,7 @@ public class Links {
     //__________ Illinois _________
     private String IlGpt = ("https://gpt.williamhill-test.com/us/il/bet/");
     private String IlCert = ("https://usc.williamhill-test.com/us/il/bet/");
-    private String IlProd = ("https://www.williamhill.com/us/il/bet");
+    private String IlProd = ("https://internalprod.us.williamhill.com/us/il/bet");
     //__________ Michigan _________
     private String MiGpt = ("https://gpt.williamhill-test.com/us/mi/bet");
     private String MiCert = ("https://usc.williamhill-test.com/us/mi/bet");
