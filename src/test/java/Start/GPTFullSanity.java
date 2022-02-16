@@ -30,9 +30,9 @@ public class GPTFullSanity {
     @Before
     public void StartUp() {
         Configuration.startMaximized = true;
-        Configuration.timeout = 18000;
+        Configuration.timeout = 60000;
         Configuration.holdBrowserOpen = false;
-        Configuration.screenshots = false;
+        Configuration.screenshots = true;
         BasicConfigurator.configure();
 
 //        login.flow();
