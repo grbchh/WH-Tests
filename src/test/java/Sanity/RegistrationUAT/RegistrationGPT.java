@@ -19,7 +19,7 @@ public class RegistrationGPT {
     public void flow() {
 
         Configuration.timeout = 150000;
-        Selenide.open(run.getLink());
+
         System.out.println("Website opened");
 
         //First Registration Page
@@ -105,9 +105,12 @@ public class RegistrationGPT {
             System.out.println("Unverified user registrated! Noice!");
         }
         else {
-            System.out.println("lol, bro, idk");
-            Configuration.holdBrowserOpen = true;
+            Selenide.
         }
+//        else {
+//            System.out.println("lol, bro, idk");
+//            Configuration.holdBrowserOpen = true;
+//        }
     }
 
 }
