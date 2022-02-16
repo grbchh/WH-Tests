@@ -36,9 +36,6 @@ public class RegistrationGPT {
         }else{
             Filler.CoresCherylFP();
         }
-//        System.out.println("Typing name...");
-//        $(Button.getFirstNameField()).setValue(Creds.getUsername());
-//        $(Button.getLastNameField()).setValue(Creds.getSurname());
 
         //Email
         System.out.println("Typing email...");
@@ -84,17 +81,6 @@ public class RegistrationGPT {
         }else{
             Filler.CoresCherylSP();
         }
-
-//        //ssn
-//        System.out.println("Typing SSN...");
-//        $(Button.getSsnField()).setValue(Creds.getSsn());
-
-//        //аdress
-//        System.out.println("Typing adress...");
-//        $(Button.getAdressField()).setValue(Creds.getAddress());
-//        $(Button.getCityField()).setValue(Creds.getCity());
-//        $(Button.getZipCodeField()).setValue(Creds.getZipCode());
-//        System.out.println("2nd page is filled with info");
 
         //Checkboxes
         $(Button.getAgreementCheckbox1()).click();

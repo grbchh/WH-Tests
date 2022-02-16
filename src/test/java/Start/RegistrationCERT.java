@@ -3,20 +3,18 @@ package Start;
 import Info.Links;
 import Sanity.BasicFLows.DocumentUpload.Upload;
 import Sanity.BasicFLows.Limits.Flow;
-import Sanity.BasicFLows.Logout.Logout;
 import Sanity.BasicFLows.Login.Login;
+import Sanity.BasicFLows.Logout.Logout;
 import Sanity.CreditCardDeposit.Deposit;
 import Sanity.RegistrationUAT.RegistrationGPT;
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
 import org.apache.log4j.BasicConfigurator;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import static com.codeborne.selenide.Selenide.open;
 
-public class GPTFullSanity {
+public class RegistrationCERT {
     Sanity.RegistrationUAT.RegistrationGPT RegistrationGPT = new RegistrationGPT();
     Logout logout = new Logout();
     Deposit cc = new Deposit();
@@ -34,92 +32,90 @@ public class GPTFullSanity {
         Configuration.holdBrowserOpen = false;
         Configuration.screenshots = true;
         BasicConfigurator.configure();
-
-//        login.flow();
     }
 
 
     @Test
-    public void RegistrationTnGPT() {
-        open(run.getTnGpt());
+    public void RegistrationTN_CERT() {
+        open(run.getTnCert());
         RegistrationGPT.flow();
     }
 
     @Test
-    public void RegistrationVAGPT() {
+    public void RegistrationVA_CERT() {
         open(run.getVaGpt());
         RegistrationGPT.flow();
     }
 
     @Test
-    public void RegistrationNjGPT() {
-        open(run.getNjGPT());
+    public void RegistrationNJ_CERT() {
+        open(run.getNjCERT());
         RegistrationGPT.flow();
     }
 
     @Test
-    public void RegistrationInGPT() {
-        open(run.getInGPT());
+    public void RegistrationIN_CERT() {
+        open(run.getInCERT());
         RegistrationGPT.flow();
     }
 
     @Test
-    public void RegistrationCoGPT() {
-        open(run.getCoGpt());
+    public void RegistrationCO_CERT() {
+        open(run.getCoCert());
         RegistrationGPT.flow();
     }
 
     @Test
-    public void RegistrationWvGPT() {
-        open(run.getWvGPT());
+    public void RegistrationWV_CERT() {
+        open(run.getWvCERT());
         RegistrationGPT.flow();
     }
 
     @Test
-    public void RegistrationIaGPT() {
-        open(run.getIaGpt());
+    public void RegistrationIA_CERT() {
+        open(run.getIaCert());
         RegistrationGPT.flow();
     }
 
     @Test
-    public void RegistrationMiGPT() {
-        open(run.getMiGpt());
+    public void RegistrationMI_CERT() {
+        open(run.getMiCert());
         RegistrationGPT.flow();
     }
 
     @Test
-    public void RegistrationIlGPT(){
-        open(run.getIlGpt());
+    public void RegistrationIL_CERT(){
+        open(run.getIlCert());
         RegistrationGPT.flow();
     }
 
     @Test
-    public void RegistrationAzGPT() {
-        open(run.getAzGpt());
+    public void RegistrationAZ_CERT() {
+        open(run.getAzCert());
         RegistrationGPT.flow();
     }
 
     @Test
-    public void RegistrationLaGPT() {
-        open(run.getLaGpt());
+    public void RegistrationLA_CERT() {
+        open(run.getLaCert());
         RegistrationGPT.flow();
     }
 
     @Test
-    public void RegistrationNvGPT() {
-        open(run.getNvGpt());
+    public void RegistrationNV_CERT() {
+        open(run.getNvCert());
         RegistrationGPT.flow();
     }
 
     @Test
-    public void RegistrationNyGPT() {
-        open(run.getNyGpt());
+    public void RegistrationNY_CERT() {
+        open(run.getNyCert());
         RegistrationGPT.flow();
     }
 
     @Test
-    public void RegistrationOnGPT() {
-        open(run.getOnGpt());
+    public void RegistrationON_CERT() {
+        open(run.getOnCert());
         RegistrationGPT.flow();
     }
 
