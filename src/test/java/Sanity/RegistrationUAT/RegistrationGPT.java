@@ -1,20 +1,27 @@
 package Sanity.RegistrationUAT;
 
 
+import Info.Links;
 import Start.URL;
 import com.codeborne.selenide.*;
 import org.junit.Assert;
 import org.junit.Test;
+import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.WebDriverRunner;
+import static org.junit.Assert.assertEquals;
 
 import static com.codeborne.selenide.Condition.disappear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.sleep;
+import static org.junit.Assert.assertEquals;
 
 public class RegistrationGPT {
     Credentials Creds = new Credentials();
     Buttons Button = new Buttons();
     URL run = new URL();
+    Creds Filler = new Creds();
+    Links link = new Links();
 
     @Test
     public void flow() {
@@ -27,9 +34,14 @@ public class RegistrationGPT {
         $(Button.getRegiButton()).shouldBe(Condition.enabled).click();
 
         //Name
-        System.out.println("Typing name...");
-        $(Button.getFirstNameField()).setValue(Creds.getUsername());
-        $(Button.getLastNameField()).setValue(Creds.getSurname());
+        if (Button.getCurrentUrl().equals(link.getNjGPT())){
+            Filler.CandiceMmagentaFP();
+        }else{
+            Filler.CoresCherylFP();
+        }
+//        System.out.println("Typing name...");
+//        $(Button.getFirstNameField()).setValue(Creds.getUsername());
+//        $(Button.getLastNameField()).setValue(Creds.getSurname());
 
         //Email
         System.out.println("Typing email...");
@@ -69,16 +81,23 @@ public class RegistrationGPT {
         $(Button.getSecurityQuestionDropdown2()).click();
         $(Button.getSecurityQuestionField2()).setValue(Creds.getAnswerSecurityQs1());
 
-        //ssn
-        System.out.println("Typing SSN...");
-        $(Button.getSsnField()).setValue(Creds.getSsn());
+        //SSN & ADRESS
+        if (Button.getCurrentUrl().equals(link.getNjGPT())){
+            Filler.CandiceMmagentaSP();
+        }else{
+            Filler.CoresCherylSP();
+        }
 
-        //adress
-        System.out.println("Typing adress...");
-        $(Button.getAdressField()).setValue(Creds.getAddress());
-        $(Button.getCityField()).setValue(Creds.getCity());
-        $(Button.getZipCodeField()).setValue(Creds.getZipCode());
-        System.out.println("2nd page is filled with info");
+//        //ssn
+//        System.out.println("Typing SSN...");
+//        $(Button.getSsnField()).setValue(Creds.getSsn());
+
+//        //аdress
+//        System.out.println("Typing adress...");
+//        $(Button.getAdressField()).setValue(Creds.getAddress());
+//        $(Button.getCityField()).setValue(Creds.getCity());
+//        $(Button.getZipCodeField()).setValue(Creds.getZipCode());
+//        System.out.println("2nd page is filled with info");
 
         //Checkboxes
         $(Button.getAgreementCheckbox1()).click();

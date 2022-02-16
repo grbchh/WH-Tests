@@ -1,5 +1,7 @@
 package Sanity.RegistrationUAT;
 
+import com.codeborne.selenide.WebDriverRunner;
+
 public class Buttons {
     private String regiButton = ".neoGamesRegister";
     private String firstNameField = "#firstname";
@@ -30,6 +32,11 @@ public class Buttons {
     private String BackButton = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__footer.ng-scope > div > mwc-reg-step2-footer-web-default > div > mwc-reg-first-step-link > div > button";
     private String FinishRegiErrorText = "";
     private String LoadingScreenAfterSubmitBtn = "";
+    private String currentUrl = WebDriverRunner.url();
+
+    public String getCurrentUrl() {
+        return currentUrl;
+    }
 
     public String getLoadingScreenAfterSubmitBtn() {
         return LoadingScreenAfterSubmitBtn;
