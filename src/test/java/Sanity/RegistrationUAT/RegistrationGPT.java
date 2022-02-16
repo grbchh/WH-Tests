@@ -3,6 +3,7 @@ package Sanity.RegistrationUAT;
 
 import Start.URL;
 import com.codeborne.selenide.*;
+import org.junit.Assert;
 import org.junit.Test;
 
 import static com.codeborne.selenide.Condition.disappear;
@@ -90,7 +91,18 @@ public class RegistrationGPT {
         $(Button.getFinishRegiButton()).shouldBe(Condition.visible).click();
         System.out.println("Submit button pressed");
 
-        //Something I need to set wait to, so webdriver dont start verification instantly
+        //Flow If regi didnt pass after 1st try
+        if ($(Button.getFinishRegiErrorText()).isDisplayed()) {
+            do {
+                System.out.println("Okay, one more click on Submit Button");
+                $(Button.getFinishRegiButton()).shouldBe(Condition.visible).click();
+                $(Button.getLoadingScreenAfterSubmitBtn()).should(disappear);
+                $(Button.getLoadingScreenAfterSubmitBtn()).should(disappear);
+            }
+            while ($(Button.getFinishRegiErrorText()).isDisplayed());
+        }
+
+        //Something I need to set wait to, so webdriver dont start verification below instantly
         $((Button.getBackButton())).should(disappear);
 
         //This is verification of account type created
@@ -102,10 +114,10 @@ public class RegistrationGPT {
         else if ($(Button.getAfterRegiUnactiveDocUploadButton()).isDisplayed())
         {
             System.out.println("Registration passed, here your email:    " + Creds.getEmail());
-            System.out.println("Unverified user registrated! Noice!");
+            System.out.println("Its an unverified user! Noice!");
         }
         else {
-            Selenide.
+            Assert.fail();
         }
 //        else {
 //            System.out.println("lol, bro, idk");
