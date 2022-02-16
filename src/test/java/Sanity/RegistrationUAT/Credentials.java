@@ -8,7 +8,7 @@ public class Credentials {
 
 //     private String email = "qa__"+"Zefirka"+"@neogames.com";
 //    private String email = "qa_"+"heh"+"@neogames.com";
-    private String email = "62v12@neogames.com";
+    private String email = "62v12TT@neogames.com";
 //    private String email = "R1U3@neogames.com";
 
     //_______________________________________________________________________________________________________________

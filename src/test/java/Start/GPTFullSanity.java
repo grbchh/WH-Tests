@@ -14,6 +14,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import static com.codeborne.selenide.Selenide.open;
+
 public class GPTFullSanity {
     Sanity.RegistrationUAT.RegistrationGPT RegistrationGPT = new RegistrationGPT();
     Logout logout = new Logout();
@@ -36,93 +38,88 @@ public class GPTFullSanity {
 //        login.flow();
     }
 
-    //    @After
-    public void ShutDown() {
-
-//        logout.flow();
-    }
 
     @Test
     public void RegistrationTnGPT() {
-        Selenide.open(run.getTnGpt());
+        open(run.getTnGpt());
         RegistrationGPT.flow();
     }
 
     @Test
     public void RegistrationVAGPT() {
-        Selenide.open(run.getVaGpt());
+        open(run.getVaGpt());
         RegistrationGPT.flow();
     }
 
     @Test
     public void RegistrationNjGPT() {
-        Selenide.open(run.getNjGPT());
+        open(run.getNjGPT());
         RegistrationGPT.flow();
     }
 
     @Test
     public void RegistrationInGPT() {
-        Selenide.open(run.getInGPT());
+        open(run.getInGPT());
         RegistrationGPT.flow();
     }
 
     @Test
     public void RegistrationCoGPT() {
-        Selenide.open(run.getCoGpt());
+        open(run.getCoGpt());
         RegistrationGPT.flow();
     }
 
     @Test
     public void RegistrationWvGPT() {
-        Selenide.open(run.getWvGPT());
+        open(run.getWvGPT());
         RegistrationGPT.flow();
     }
 
     @Test
     public void RegistrationIaGPT() {
-        Selenide.open(run.getIaGpt());
+        open(run.getIaGpt());
         RegistrationGPT.flow();
     }
 
     @Test
     public void RegistrationMiGPT() {
-        Selenide.open(run.getMiGpt());
+        open(run.getMiGpt());
         RegistrationGPT.flow();
     }
 
     @Test
     public void RegistrationIlGPT(){
-        Selenide.open(run.getIlGpt());
+        open(run.getIlGpt());
         RegistrationGPT.flow();
     }
 
     @Test
     public void RegistrationAzGPT() {
-        Selenide.open(run.getAzGpt());
+        open(run.getAzGpt());
         RegistrationGPT.flow();
     }
 
     @Test
     public void RegistrationLaGPT() {
-        Selenide.open(run.getLaGpt());
+        open(run.getLaGpt());
         RegistrationGPT.flow();
     }
 
     @Test
     public void RegistrationNvGPT() {
-        Selenide.open(run.getNvGpt());
+        open(run.getNvGpt());
         RegistrationGPT.flow();
     }
 
     @Test
     public void RegistrationNyGPT() {
-        Selenide.open(run.getNyGpt());
+        open(run.getNyGpt());
         RegistrationGPT.flow();
     }
 
     @Test
     public void RegistrationOnGPT() {
-        Selenide.open(run.getOnGpt());
+        open(run.getOnGpt());
         RegistrationGPT.flow();
     }
 

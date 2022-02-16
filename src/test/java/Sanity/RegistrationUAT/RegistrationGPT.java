@@ -25,16 +25,13 @@ public class RegistrationGPT {
 
     @Test
     public void flow() {
-
-        Configuration.timeout = 150000;
-
         System.out.println("Website opened");
 
         //First Registration Page
         $(Button.getRegiButton()).shouldBe(Condition.enabled).click();
 
         //Name
-        if (Button.getCurrentUrl().equals(link.getNjGPT())){
+        if (WebDriverRunner.url().equals(link.getNjGPT())){
             Filler.CandiceMmagentaFP();
         }else{
             Filler.CoresCherylFP();
@@ -82,7 +79,7 @@ public class RegistrationGPT {
         $(Button.getSecurityQuestionField2()).setValue(Creds.getAnswerSecurityQs1());
 
         //SSN & ADRESS
-        if (Button.getCurrentUrl().equals(link.getNjGPT())){
+        if (WebDriverRunner.url().equals(link.getNjGPT())){
             Filler.CandiceMmagentaSP();
         }else{
             Filler.CoresCherylSP();

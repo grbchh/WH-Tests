@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Selenide.sleep;
 
 public class Creds {
     Buttons Button = new Buttons();
-    URL run = new URL();
+
 
 
     //Candice Mmagenta

@@ -30,13 +30,9 @@ public class Buttons {
     private String AfterRegiDepositButton = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__footer.ng-scope > div > mwc-reg-step3-footer-area-wh > div > div > button";
     private String AfterRegiUnactiveDocUploadButton = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__body.ng-scope > div > div > div.mwc-wh-limited-account-content > div > mwc-upload-document-wrapper > div > mwc-doc-upload > div > div > div > div > mwc-doc-upload-form > form > div.mwc-form-group.mwc-no-margin-bottom > div";
     private String BackButton = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__footer.ng-scope > div > mwc-reg-step2-footer-web-default > div > mwc-reg-first-step-link > div > button";
-    private String FinishRegiErrorText = "";
-    private String LoadingScreenAfterSubmitBtn = "";
-    private String currentUrl = WebDriverRunner.url();
+    private String FinishRegiErrorText = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__body.ng-scope > div > div.mwc-reg-wizard > div.mwc-reg-content.ng-scope > div > div > p > span";
+    private String LoadingScreenAfterSubmitBtn = "#loadingLogo > img";
 
-    public String getCurrentUrl() {
-        return currentUrl;
-    }
 
     public String getLoadingScreenAfterSubmitBtn() {
         return LoadingScreenAfterSubmitBtn;
