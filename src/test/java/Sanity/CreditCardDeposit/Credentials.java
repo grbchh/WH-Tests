@@ -5,7 +5,7 @@ public class Credentials {
     private String CVV = "404";
     private int ExpirationMonth = 9;
     private String ExpirationYear = "2022";
-    private String Amount = "1000";
+    private String Amount = "100";
     ///////Getters
 
     public String getCreditCardNumber() {

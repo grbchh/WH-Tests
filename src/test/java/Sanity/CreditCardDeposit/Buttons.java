@@ -6,7 +6,7 @@ public class Buttons {
     private String DepositButton = "#app > div > div.Drawer.defaultSlideDrawer.account.bottom.open > div > div > div.menuAccount__funds-container > div.menuAccount__funds__grid-container > button.Button.WH__btn.WH__btn--deposit";
 
 
-    private String ViewAllDepositsMethodsButton = "#paymentForm > mwc-cashier-payment-list-link > div";
+    private String ViewAllDepositsMethodsButton = "#paymentForm > mwc-cashier-payment-list-link > div > a";
     private String SafeAndSecureElement = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__body.ng-scope > div > mwc-cashier-safe-and-secure-bar > div > span.ng-binding";
     private String ChooseDepositMethodButton = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__body.ng-scope > div > div > mwc-cashier-list > div > div > mwc-cashier-list-item:nth-child(2)";
 
