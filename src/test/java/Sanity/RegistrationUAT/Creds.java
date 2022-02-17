@@ -25,7 +25,6 @@ public class Creds {
         $(Button.getFirstNameField()).setValue("Candice");
         $(Button.getLastNameField()).setValue("Mmagenta");
     };
-
     public void CandiceMmagentaSP (){
         //ssn
         System.out.println("Typing SSN...");
@@ -44,7 +43,6 @@ public class Creds {
         $(Button.getFirstNameField()).setValue("Cores");
         $(Button.getLastNameField()).setValue("Cheryl");
     };
-
     public void CoresCherylSP (){
         //ssn
         System.out.println("Typing SSN...");
@@ -59,13 +57,11 @@ public class Creds {
     };
 
     //Random
-    //Candice Mmagenta
     public void RandomFP (){
         $(Button.getFirstNameField()).shouldBe(Condition.visible);
         $(Button.getFirstNameField()).setValue("Crypto");
         $(Button.getLastNameField()).setValue("Bro");
     };
-
     public void RandomSP (){
         //ssn
         System.out.println("Typing SSN...");

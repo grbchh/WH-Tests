@@ -11,79 +11,42 @@ import static com.codeborne.selenide.Selenide.sleep;
 
 public class Deposit {
     public void deposit() {
+
         Buttons btn = new Buttons();
         URL run = new URL();
         Creds creds = new Creds();
 
-        Selenide.open(run.getLink());
-        System.out.println("Website opened");
+        System.out.println("Website opened, lets wait for buttons");
+
+        //Account button
         $(btn.getAccountMenuButton()).shouldBe(Condition.enabled).click();
         System.out.println("Clicked on Account Menu button");
+
+        //Deposit button
         $(btn.getDepositButton()).shouldBe(Condition.enabled).click();
         System.out.println("Clicked on Deposit button");
+
+        //Waiting for menu to load, sometimes may take a while
         $(btn.getSafeAndSecureElement()).shouldBe(Condition.visible);
+        System.out.println("");
 
-        if($(btn.getViewAllDepositsMethodsButton()).is(Condition.visible)){
-            $(btn.getViewAllDepositsMethodsButton()).click();
-            System.out.println("Oh, I see you made a deposit already");
-        }
-        $(btn.getChooseDepositMethodButton()).should(Condition.appear);
-        $(btn.getChooseDepositMethodButton()).shouldBe(Condition.enabled).click();
-        System.out.println("Chossed ACH as payment method");
 
-            $(btn.getRoutingNumberField()).shouldBe(enabled).setValue(creds.getRoutingNumber());
-            $(btn.getAccountNumber()).shouldBe(enabled).setValue(creds.getAccountNumber());
-            System.out.println("Entered routing and account numbers");
+        //Entering amount
+        $(btn.getDepositAmountField()).should(appear).setValue("33");
+        System.out.println("Entered 33$ as deposit amount");
 
-            $(btn.getDriverLicenseField()).shouldBe(enabled).setValue(creds.getDriverLicense());
-            $(btn.getDriverLicenseStateDropdown()).shouldBe(enabled).selectOption("VA");
-            System.out.println("Entered Driving License");
+        //Pressing continue
+        $(btn.getContinueButton()).click();
+        System.out.println("LETS");
 
-            $(btn.getAgreementCheckbox()).shouldBe(enabled).click();
-            System.out.println("Checkbox ticked");
-            $(btn.getDepositAmountField()).shouldBe(enabled).setValue("99");
-            System.out.println("Amount set to $99");
+        //Pressing another continue
+        $(btn.getSubmitButton()).should(appear).click();
+        System.out.println("GO!");
 
-            $(btn.getContinueButton()).shouldBe(enabled).click();
-            System.out.println("Continue clicked");
+        //Checking if deposit passed
+        $(btn.getDepositMenuAppearCheckHeader()).should(appear).shouldHave(text("Confirmed"));
+        System.out.println("Deposit successfull, yo!");
 
-            $(btn.getSubmitButton()).shouldBe(enabled).click();
-            System.out.println("Submit clicked");
-
-            $(btn.getDepositMenuAppearCheckHeader()).shouldHave(text("Confirmed"));
-//
-//
-//
-//            System.out.println("Detected account details, trying to delete them");
-//            $(btn.getDeleteExistingCardsCredsButton()).shouldBe(Condition.enabled).click();
-//            $(btn.getConfirmDeletingCardCredsButton()).shouldBe(Condition.visible).click();
-//            System.out.println("Card deleted");
-//            $(btn.getChooseDepositMethodButton()).shouldBe(Condition.visible).click();
-//            $("#paymentForm > div.mwc-cashier-payment-tools-container.ng-scope > div > mwc-cashier-payment-logo > img").shouldBe(Condition.visible);
-//
-//            $(btn.getRoutingNumberField()).shouldBe(enabled).setValue(creds.getRoutingNumber());
-//            $(btn.getAccountNumber()).shouldBe(enabled).setValue(creds.getAccountNumber());
-//            System.out.println("Entered routing and account numbers");
-//
-//
-//            $(btn.getDriverLicenseField()).shouldBe(enabled).setValue(creds.getDriverLicense());
-//            $(btn.getDriverLicenseStateDropdown()).shouldBe(enabled).selectOption("VA");
-//            System.out.println("Entered Driving License");
-//
-//            $(btn.getAgreementCheckbox()).shouldBe(enabled).click();
-//            System.out.println("Checkbox ticked");
-//            $(btn.getDepositAmountField()).shouldBe(enabled).setValue("99");
-//            System.out.println("Amount set to $99");
-//
-//            $(btn.getContinueButton()).shouldBe(enabled).click();
-//            System.out.println("Continue clicked");
-//
-//            $(btn.getSubmitButton()).shouldBe(enabled).click();
-//            System.out.println("Submit clicked");
-//
-//            $(btn.getDepositMenuAppearCheckHeader()).shouldHave(text("Confirmed"));
-//
-//
 
     }
 }

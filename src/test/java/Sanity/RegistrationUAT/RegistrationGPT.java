@@ -29,7 +29,7 @@ public class RegistrationGPT {
     @Test
     public void flow() {
         Configuration.reportsFolder = "C:\\Users\\oleksandrh\\Desktop\\Screenshototemporingho";
-        System.out.println("Website opened");
+        System.out.println("Website opened, now looking for that two heckin' buttons..");
 
         //First Registration Page
         $(Button.getRegiButton()).shouldBe(Condition.enabled).click();

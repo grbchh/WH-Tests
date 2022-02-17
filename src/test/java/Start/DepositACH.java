@@ -24,79 +24,79 @@ public class DepositACH {
         BasicConfigurator.configure();
     }
     @Test
-    public void DepositCC_AZ() {
+    public void DepositACH_AZ() {
         open(run.getAzGpt());
         login.ACHlogin();
         ach.deposit();
     }
     @Test
-    public void DepositCC_CO() {
+    public void DepositACH_CO() {
         open(run.getCoGpt());
         login.ACHlogin();
         ach.deposit();
     }
     @Test
-    public void DepositCC_IA() {
+    public void DepositACH_IA() {
         open(run.getIaGpt());
         login.ACHlogin();
         ach.deposit();
     }
     @Test
-    public void DepositCC_IL() {
+    public void DepositACH_IL() {
         open(run.getIlGpt());
         login.ACHlogin();
         ach.deposit();
     }
     @Test
-    public void DepositCC_TN() {
+    public void DepositACH_TN() {
         open(run.getTnGpt());
         login.ACHlogin();
         ach.deposit();
     }
     @Test
-    public void DepositCC_VA() {
+    public void DepositACH_VA() {
         open(run.getVaGpt());
         login.ACHlogin();
         ach.deposit();
     }
     @Test
-    public void DepositCC_NJ() {
+    public void DepositACH_NJ() {
         open(run.getNjGPT());
         login.ACHlogin();
         ach.deposit();
     }
     @Test
-    public void DepositCC_IN() {
+    public void DepositACH_IN() {
         open(run.getInGPT());
         login.ACHlogin();
         ach.deposit();
     }
     @Test
-    public void DepositCC_WV() {
+    public void DepositACH_WV() {
         open(run.getWvGPT());
         login.ACHlogin();
         ach.deposit();
     }
     @Test
-    public void DepositCC_LA() {
+    public void DepositACH_LA() {
         open(run.getLaGpt());
         login.ACHlogin();
         ach.deposit();
     }
     @Test
-    public void DepositCC_NV() {
+    public void DepositACH_NV() {
         open(run.getNvGpt());
         login.ACHlogin();
         ach.deposit();
     }
     @Test
-    public void DepositCC_NY() {
+    public void DepositACH_NY() {
         open(run.getNyGpt());
         login.ACHlogin();
         ach.deposit();
     }
     @Test
-    public void DepositCC_ON() {
+    public void DepositACH_ON() {
         open(run.getOnGpt());
         login.ACHlogin();
         ach.deposit();
