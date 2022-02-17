@@ -50,7 +50,7 @@ public class Flow {
         $(By.name("LoggedInTime[Daily]")).selectOption("24 hours");
         System.out.println("Limits set");
 
-        //Apply button
+        //Apply&Confirm buttons
         $(btn.getApplyButton()).shouldBe(Condition.enabled).click();
         System.out.println("Apply button pressed");
         $(btn.getConfirmButton()).shouldBe(Condition.enabled).click();
