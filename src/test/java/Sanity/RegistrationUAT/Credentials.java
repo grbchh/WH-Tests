@@ -1,14 +1,25 @@
 package Sanity.RegistrationUAT;
 
+import Info.Reader;
 import Tools.RandomNumberGenerator;
+
+import java.util.Scanner;
 
 
 public class Credentials {
+    Reader Reader = new Reader();
+    Scanner in = new Scanner(System.in);
     RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
+
+
+    private String email ="20i4@neogames.com";
+
+
 
 //     private String email = "qa__"+"Zefirka"+"@neogames.com";
 //    private String email = "qa_"+"heh"+"@neogames.com";
-    private String email = "62v12TT@neogames.com";
+//    private String email ="20i4@neogames.com" //in.next()+ "Neogames.com";
+    //"20i4@neogames.com";
 //    private String email = "R1U3@neogames.com";
 
     //_______________________________________________________________________________________________________________
@@ -29,8 +40,13 @@ public class Credentials {
     private String answerSecurityQs0 = "Sandwich";
     private String answerSecurityQs1 = "Cat";
     //_______________________________________________________________________________________________________________
+    private String driverLicense = "D" + randomNumberGenerator.DriverLicense();
+    //_______________________________________________________________________________________________________________
     public String getUsername() {
         return username;
+    }
+    public String getDriverLicense() {
+        return driverLicense;
     }
     public String getPhoneNumber() {
         return phoneNumber;

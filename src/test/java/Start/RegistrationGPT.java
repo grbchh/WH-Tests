@@ -31,6 +31,7 @@ public class RegistrationGPT {
         Configuration.holdBrowserOpen = false;
         Configuration.screenshots = true;
         BasicConfigurator.configure();
+        Configuration.reportsFolder = "C:\\Users\\oleksandrh\\Desktop\\Screenshototemporingho";
 
     }
 
@@ -119,4 +120,9 @@ public class RegistrationGPT {
         RegistrationGPT.flow();
     }
 
+    @Test
+    public void RegistrationNVMGPT() {
+        open(run.getNVWGPT());
+        RegistrationGPT.flow();
+    }
 }

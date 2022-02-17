@@ -23,8 +23,12 @@ public class RegistrationGPT {
     Creds Filler = new Creds();
     Links link = new Links();
 
+
+
+
     @Test
     public void flow() {
+        Configuration.reportsFolder = "C:\\Users\\oleksandrh\\Desktop\\Screenshototemporingho";
         System.out.println("Website opened");
 
         //First Registration Page
@@ -56,6 +60,16 @@ public class RegistrationGPT {
         //Phone Number
         System.out.println("Typing phone number...");
         $(Button.getCellPhoneField()).setValue(Creds.getPhoneNumber());
+
+        //Driver License for Nevada
+        if ($(Button.getIDTypeDropdown()).isDisplayed()){
+            System.out.println("Typing DL...");
+            $(Button.getDrivingLicenseNumberField()).setValue(Creds.getDriverLicense());
+            $(Button.getIDExpiresDayDropdown()).selectOption(13);
+            $(Button.getIDExpiresMonthDropdown()).selectOptionContainingText("8");
+            $(Button.getIDExpiresYearDropdown()).selectOption(2025);
+//            $((Button.getIDTypeDropdown())).selectOption("Driving license");
+        }
 
         //"Next" button
         $(Button.getNextRegiStepButton()).click();

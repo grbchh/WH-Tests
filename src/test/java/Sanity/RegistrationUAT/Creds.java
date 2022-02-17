@@ -19,6 +19,7 @@ public class Creds {
 
     //Candice Mmagenta
     public void CandiceMmagentaFP (){
+        $(Button.getFirstNameField()).shouldBe(Condition.visible);
         $(Button.getFirstNameField()).setValue("Candice");
         $(Button.getLastNameField()).setValue("Mmagenta");
     };

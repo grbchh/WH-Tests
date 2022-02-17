@@ -58,7 +58,11 @@ public class Links {
     private String OnCert = ("https://usc.williamhill-test.com/us/on/bet");
     private String OnProd = ("https://internalprod.us.williamhill.com/us/on/bet");
     //__________________________________________________________________________________________________________________
+    private String NVWGPT = "https://wh.gpt.l5y.app/us/nv/bet";
 
+    public String getNVWGPT() {
+        return NVWGPT;
+    }
 
     public String getOnGpt() {
         return OnGpt;
