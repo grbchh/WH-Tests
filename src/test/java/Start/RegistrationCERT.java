@@ -38,85 +38,85 @@ public class RegistrationCERT {
     @Test
     public void RegistrationTN_CERT() {
         open(run.getTnCert());
-        RegistrationGPT.flow();
+        RegistrationGPT.Flow();
     }
 
     @Test
     public void RegistrationVA_CERT() {
         open(run.getVaGpt());
-        RegistrationGPT.flow();
+        RegistrationGPT.Flow();
     }
 
     @Test
     public void RegistrationNJ_CERT() {
         open(run.getNjCERT());
-        RegistrationGPT.flow();
+        RegistrationGPT.Flow();
     }
 
     @Test
     public void RegistrationIN_CERT() {
         open(run.getInCERT());
-        RegistrationGPT.flow();
+        RegistrationGPT.Flow();
     }
 
     @Test
     public void RegistrationCO_CERT() {
         open(run.getCoCert());
-        RegistrationGPT.flow();
+        RegistrationGPT.Flow();
     }
 
     @Test
     public void RegistrationWV_CERT() {
         open(run.getWvCERT());
-        RegistrationGPT.flow();
+        RegistrationGPT.Flow();
     }
 
     @Test
     public void RegistrationIA_CERT() {
         open(run.getIaCert());
-        RegistrationGPT.flow();
+        RegistrationGPT.Flow();
     }
 
     @Test
     public void RegistrationMI_CERT() {
         open(run.getMiCert());
-        RegistrationGPT.flow();
+        RegistrationGPT.Flow();
     }
 
     @Test
     public void RegistrationIL_CERT(){
         open(run.getIlCert());
-        RegistrationGPT.flow();
+        RegistrationGPT.Flow();
     }
 
     @Test
     public void RegistrationAZ_CERT() {
         open(run.getAzCert());
-        RegistrationGPT.flow();
+        RegistrationGPT.Flow();
     }
 
     @Test
     public void RegistrationLA_CERT() {
         open(run.getLaCert());
-        RegistrationGPT.flow();
+        RegistrationGPT.Flow();
     }
 
     @Test
     public void RegistrationNV_CERT() {
         open(run.getNvCert());
-        RegistrationGPT.flow();
+        RegistrationGPT.Flow();
     }
 
     @Test
     public void RegistrationNY_CERT() {
         open(run.getNyCert());
-        RegistrationGPT.flow();
+        RegistrationGPT.Flow();
     }
 
     @Test
     public void RegistrationON_CERT() {
         open(run.getOnCert());
-        RegistrationGPT.flow();
+        RegistrationGPT.Flow();
     }
 
 }

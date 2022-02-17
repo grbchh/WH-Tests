@@ -3,8 +3,8 @@ package Start;
 import Info.Links;
 import Sanity.BasicFLows.DocumentUpload.Upload;
 import Sanity.BasicFLows.Limits.Flow;
-import Sanity.BasicFLows.Logout.Logout;
 import Sanity.BasicFLows.Login.Login;
+import Sanity.BasicFLows.Logout.Logout;
 import Sanity.CreditCardDeposit.Deposit;
 import com.codeborne.selenide.Configuration;
 import org.apache.log4j.BasicConfigurator;
@@ -13,7 +13,7 @@ import org.junit.Test;
 
 import static com.codeborne.selenide.Selenide.open;
 
-public class RegistrationGPT {
+public class LimitsGPT {
     Sanity.RegistrationUAT.RegistrationGPT RegistrationGPT = new Sanity.RegistrationUAT.RegistrationGPT();
     Logout logout = new Logout();
     Deposit cc = new Deposit();
@@ -27,7 +27,7 @@ public class RegistrationGPT {
     @Before
     public void StartUp() {
         Configuration.startMaximized = true;
-        Configuration.timeout = 60000;
+//        Configuration.timeout = 60000;
         Configuration.holdBrowserOpen = false;
         Configuration.screenshots = true;
         BasicConfigurator.configure();
@@ -37,92 +37,107 @@ public class RegistrationGPT {
 
 
     @Test
-    public void RegistrationTN_GPT() {
+    public void LimitsTN_GPT() {
         open(run.getTnGpt());
-        RegistrationGPT.Flow();
+        RegistrationGPT.FlowWithRandomUser();
+        limits.Flow();
     }
 
     @Test
-    public void RegistrationVA_GPT() {
+    public void LimitsVA_GPT() {
         open(run.getVaGpt());
-        RegistrationGPT.Flow();
+        RegistrationGPT.FlowWithRandomUser();
+        limits.Flow();
     }
 
     @Test
-    public void RegistrationNJ_GPT() {
+    public void LimitsNJ_GPT() {
         open(run.getNjGPT());
-        RegistrationGPT.Flow();
+        RegistrationGPT.FlowWithRandomUser();
+        limits.Flow();
     }
 
     @Test
-    public void RegistrationIN_GPT() {
+    public void LimitsIN_GPT() {
         open(run.getInGPT());
-        RegistrationGPT.Flow();
+        RegistrationGPT.FlowWithRandomUser();
+        limits.Flow();
     }
 
     @Test
-    public void RegistrationCO_GPT() {
+    public void LimitsCO_GPT() {
         open(run.getCoGpt());
-        RegistrationGPT.Flow();
+        RegistrationGPT.FlowWithRandomUser();
+        limits.Flow();
     }
 
     @Test
-    public void RegistrationWV_GPT() {
+    public void LimitsWV_GPT() {
         open(run.getWvGPT());
-        RegistrationGPT.Flow();
+        RegistrationGPT.FlowWithRandomUser();
+        limits.Flow();
     }
 
     @Test
-    public void RegistrationIA_GPT() {
+    public void LimitsIA_GPT() {
         open(run.getIaGpt());
-        RegistrationGPT.Flow();
+        RegistrationGPT.FlowWithRandomUser();
+        limits.Flow();
     }
 
     @Test
-    public void RegistrationMI_GPT() {
+    public void LimitsMI_GPT() {
         open(run.getMiGpt());
-        RegistrationGPT.Flow();
+        RegistrationGPT.FlowWithRandomUser();
+        limits.Flow();
     }
 
     @Test
-    public void RegistrationIL_GPT(){
+    public void LimitsIL_GPT(){
         open(run.getIlGpt());
-        RegistrationGPT.Flow();
+        RegistrationGPT.FlowWithRandomUser();
+        limits.Flow();
     }
 
     @Test
-    public void RegistrationAZ_GPT() {
+    public void LimitsAZ_GPT() {
         open(run.getAzGpt());
-        RegistrationGPT.Flow();
+        RegistrationGPT.FlowWithRandomUser();
+        limits.Flow();
     }
 
     @Test
-    public void RegistrationLA_GPT() {
+    public void LimitsLA_GPT() {
         open(run.getLaGpt());
-        RegistrationGPT.Flow();
+        RegistrationGPT.FlowWithRandomUser();
+        limits.Flow();
     }
 
     @Test
-    public void RegistrationNvGPT() {
+    public void LimitsNvGPT() {
         open(run.getNvGpt());
-        RegistrationGPT.Flow();
+        RegistrationGPT.FlowWithRandomUser();
+        limits.Flow();
     }
 
     @Test
-    public void RegistrationNyGPT() {
+    public void LimitsNyGPT() {
         open(run.getNyGpt());
-        RegistrationGPT.Flow();
+        RegistrationGPT.FlowWithRandomUser();
+        limits.Flow();
     }
 
     @Test
-    public void RegistrationOnGPT() {
+    public void LimitsOnGPT() {
         open(run.getOnGpt());
-        RegistrationGPT.Flow();
+        RegistrationGPT.FlowWithRandomUser();
+        limits.Flow();
     }
 
     @Test
-    public void RegistrationNVMGPT() {
+    public void LimitsNVMGPT() {
         open(run.getNVWGPT());
-        RegistrationGPT.Flow();
+        RegistrationGPT.FlowWithRandomUser();
+        limits.Flow();
     }
 }

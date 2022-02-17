@@ -36,4 +36,29 @@ public class RandomNumberGenerator {
         return randomNumber;
     }
 
+    public String DayOfBirth() {
+        int a = 1;
+        int b = 28;
+        int first = a + (int) (Math.random() * b);
+        String randomNumber = String.valueOf(first);
+
+        return randomNumber;
+    }
+
+    public String MonthOfBirth() {
+        int a = 1;
+        int b = 12;
+        int first = a + (int) (Math.random() * b);
+        String randomNumber = String.valueOf(first);
+
+        return randomNumber;
+    }
+    public String YearOfBirth() {
+        int a = 1955;
+        int b = 2000;
+        int first = a + (int) (Math.random() * b);
+        String randomNumber = String.valueOf(first);
+
+        return randomNumber;
+    }
 }

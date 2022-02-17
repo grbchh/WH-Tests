@@ -71,7 +71,7 @@ public class Creds {
         System.out.println("Typing adress...");
         $(Button.getAdressField()).setValue("Qeckington St");
         $(Button.getCityField()).setValue("Hehester");
-        $(Button.getZipCodeField()).setValue("00000");
+        $(Button.getZipCodeField()).setValue(randomNumberGenerator.RoutingNumber());
         System.out.println("2nd page is filled with info");
     };
 }
