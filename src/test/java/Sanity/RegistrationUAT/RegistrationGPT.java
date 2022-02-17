@@ -35,11 +35,12 @@ public class RegistrationGPT {
         $(Button.getRegiButton()).shouldBe(Condition.enabled).click();
 
         //Name
-        if (WebDriverRunner.url().equals(link.getNjGPT())){
-            Filler.CandiceMmagentaFP();
-        }else{
-            Filler.CoresCherylFP();
-        }
+        Filler.RandomFP();
+//        if (WebDriverRunner.url().equals(link.getNjGPT())){
+//            Filler.CandiceMmagentaFP();
+//        }else{
+//            Filler.CoresCherylFP();
+//        }
 
         //Email
         System.out.println("Typing email...");
@@ -90,11 +91,12 @@ public class RegistrationGPT {
         $(Button.getSecurityQuestionField2()).setValue(Creds.getAnswerSecurityQs1());
 
         //SSN & ADRESS
-        if (WebDriverRunner.url().equals(link.getNjGPT())){
-            Filler.CandiceMmagentaSP();
-        }else{
-            Filler.CoresCherylSP();
-        }
+        Filler.RandomSP();
+//        if (WebDriverRunner.url().equals(link.getNjGPT())){
+//            Filler.CandiceMmagentaSP();
+//        }else{
+//            Filler.CoresCherylSP();
+//        }
 
         //Checkboxes
         $(Button.getAgreementCheckbox1()).click();

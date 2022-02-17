@@ -1,6 +1,7 @@
 package Sanity.RegistrationUAT;
 
 import Start.URL;
+import Tools.RandomNumberGenerator;
 import org.junit.Test;
 import Start.URL;
 import com.codeborne.selenide.*;
@@ -14,6 +15,7 @@ import static com.codeborne.selenide.Selenide.sleep;
 
 public class Creds {
     Buttons Button = new Buttons();
+    RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
 
 
 
@@ -56,6 +58,26 @@ public class Creds {
         System.out.println("2nd page is filled with info");
     };
 
+    //Random
+    //Candice Mmagenta
+    public void RandomFP (){
+        $(Button.getFirstNameField()).shouldBe(Condition.visible);
+        $(Button.getFirstNameField()).setValue("Crypto");
+        $(Button.getLastNameField()).setValue("Bro");
+    };
+
+    public void RandomSP (){
+        //ssn
+        System.out.println("Typing SSN...");
+        $(Button.getSsnField()).setValue(randomNumberGenerator.RoutingNumber());
+
+        //аdress
+        System.out.println("Typing adress...");
+        $(Button.getAdressField()).setValue("Qeckington St");
+        $(Button.getCityField()).setValue("Hehester");
+        $(Button.getZipCodeField()).setValue("00000");
+        System.out.println("2nd page is filled with info");
+    };
 }
 
 

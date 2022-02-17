@@ -16,6 +16,7 @@ public class Login {
     private Buttons btn = new Buttons();
     private URL run = new URL();
 
+
     @Test
     public void flow() {
         Configuration.timeout = 150000;
@@ -40,5 +41,15 @@ public class Login {
         System.out.println("Logged in");
     }
 
+    @Test
+    public void ACHlogin() {
+        Configuration.timeout = 60000;
+        $(btn.getLoginButton()).shouldBe(enabled).click();
+        $(btn.getEmailFiled()).shouldBe(enabled).setValue("35v6@neogames.com");
+        $(btn.getPasswordField()).shouldBe(enabled).setValue("test1234");
+        $(btn.getSighnInButton()).shouldBe(enabled).click();
+        $(btn.getMyAccountButton()).shouldBe(visible);
+        System.out.println("Logged in");
+    }
 
 }
