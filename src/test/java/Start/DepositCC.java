@@ -18,8 +18,8 @@ public class DepositCC {
     @Before
     public void StartUp() {
         Configuration.startMaximized = true;
-        Configuration.timeout = 60000;
-        Configuration.holdBrowserOpen = false;
+//        Configuration.timeout = 60000;
+        Configuration.holdBrowserOpen =  false;
         Configuration.screenshots = true;
         BasicConfigurator.configure();
     }
