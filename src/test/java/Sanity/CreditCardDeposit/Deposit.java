@@ -10,7 +10,6 @@ import static com.codeborne.selenide.Selenide.sleep;
 public class Deposit {
     Buttons btn = new Buttons();
     Credentials creds = new Credentials();
-    URL url = new URL();
 
     public void flow(){
 

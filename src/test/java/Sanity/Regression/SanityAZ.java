@@ -10,6 +10,7 @@ import org.apache.log4j.BasicConfigurator;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.OrderWith;
 
 public class SanityAZ {
     RegistrationGPT regi = new RegistrationGPT();

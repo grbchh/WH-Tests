@@ -33,20 +33,23 @@ public class RegistrationGPT {
         $(Button.getRegiButton()).shouldBe(Condition.enabled).click();
 
         //Name
-        Filler.RandomFP();
-//        if (WebDriverRunner.url().equals(link.getNjGPT())){
-//            Filler.CandiceMmagentaFP();
-//        }else{
-//            Filler.CoresCherylFP();
-//        }
+
+        if (WebDriverRunner.url().equals(link.getNjGPT())){
+            Filler.CandiceMmagentaFP();
+            System.out.println("Hello, Candice!");
+        }else{
+            Filler.CoresCherylFP();
+            System.out.println("Hello, Cores!");
+//            Filler.RandomFP();
+        }
 
         //Email
         System.out.println("Typing email...");
         $(Button.getEmailField()).setValue(Creds.getEmail());
 
         //Gender
-        System.out.println("Picking gender...");
         if ($(Button.getGenderDropdown()).isDisplayed()) {
+            System.out.println("Picking gender...");
             $(Button.getGenderDropdown()).selectOptionContainingText("Non-Binary");
         }
 
@@ -89,12 +92,13 @@ public class RegistrationGPT {
         $(Button.getSecurityQuestionField2()).setValue(Creds.getAnswerSecurityQs1());
 
         //SSN & ADRESS
-        Filler.RandomSP();
-//        if (WebDriverRunner.url().equals(link.getNjGPT())){
-//            Filler.CandiceMmagentaSP();
-//        }else{
-//            Filler.CoresCherylSP();
-//        }
+
+        if (WebDriverRunner.url().equals(link.getNjGPT())){
+            Filler.CandiceMmagentaSP();
+        }else{
+            Filler.CoresCherylSP();
+//            Filler.RandomSP();
+        }
 
         //Checkboxes
         $(Button.getAgreementCheckbox1()).click();

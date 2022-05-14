@@ -12,7 +12,7 @@ public class Credentials {
     RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
 
 
-    private String email ="35v6@neogames.com";
+    private String email ="qa__"+"35v6@neogames.com";
 
 
 
