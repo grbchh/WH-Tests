@@ -1,4 +1,4 @@
-package Sanity.RegistrationUAT;
+package Sanity.RegistrationProd;
 
 import Info.Reader;
 import Tools.RandomNumberGenerator;

@@ -11,7 +11,7 @@ public class URL {
 
 
     ///////////////
-    private String Link = RunTestOn.getTnGpt();
+    private String Link = RunTestOn.getTnProd();
 //    private String LoginEmail = "oleksandrh@neogames.com";
       private String LoginEmail = RegiGPT.getEmail();
 
