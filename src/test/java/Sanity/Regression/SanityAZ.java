@@ -2,7 +2,7 @@ package Sanity.Regression;
 
 import Start.DepositACH;
 import Start.DepositCC;
-import Start.LimitsGPT;
+import Start.LimitsGPT_B;
 import Start.RegistrationGPT;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
@@ -10,13 +10,12 @@ import org.apache.log4j.BasicConfigurator;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.runner.OrderWith;
 
 public class SanityAZ {
     RegistrationGPT regi = new RegistrationGPT();
     DepositCC cc = new DepositCC();
     DepositACH ach = new DepositACH();
-    LimitsGPT limits = new LimitsGPT();
+    LimitsGPT_B limits = new LimitsGPT_B();
 
     @BeforeClass
     public static void beforeClass() throws Exception {

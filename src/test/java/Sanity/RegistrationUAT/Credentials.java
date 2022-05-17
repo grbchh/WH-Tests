@@ -2,6 +2,7 @@ package Sanity.RegistrationUAT;
 
 import Info.Reader;
 import Tools.RandomNumberGenerator;
+import com.github.javafaker.Faker;
 
 import java.util.Scanner;
 
@@ -9,19 +10,20 @@ import java.util.Scanner;
 public class Credentials {
     Reader Reader = new Reader();
     Scanner in = new Scanner(System.in);
+    Faker faker = new Faker();
+    String firstName = faker.name().firstName();
+    String lastName = faker.name().lastName();
+
     RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
 
 
-    private String email ="qa__" +  randomNumberGenerator.PhoneNumber() + "@neogames.com";
-
-
+    private String email ="qa__" +  firstName + lastName + "@neogames.com";
 
 //     private String email = "qa__"+"Zefirka"+"@neogames.com";
 //    private String email = "qa_"+"heh"+"@neogames.com";
 //    private String email ="20i4@neogames.com" //in.next()+ "Neogames.com";
     //"20i4@neogames.com";
 //    private String email = "R1U3@neogames.com";
-
     //_______________________________________________________________________________________________________________
     private String phoneNumber =  "380" + randomNumberGenerator.PhoneNumber();
 //    private String phoneNumber =  "6082926307";

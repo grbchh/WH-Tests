@@ -28,7 +28,7 @@ public class RegistrationProd {
     @Before
     public void StartUp() {
         Configuration.startMaximized = true;
-        Configuration.timeout = 60000;
+        Configuration.timeout = 400000;
         Configuration.holdBrowserOpen = false;
         Configuration.screenshots = true;
         BasicConfigurator.configure();

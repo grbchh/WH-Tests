@@ -49,7 +49,7 @@ public class Login {
         Configuration.reportsFolder = "C:\\Users\\oleksandrh\\Desktop\\Screenshototemporingho";
 
         $(btn.getLoginButton()).shouldBe(enabled).click();
-        $(btn.getEmailFiled()).shouldBe(enabled).setValue("35v6@neogames.com");
+        $(btn.getEmailFiled()).shouldBe(enabled).setValue("20i4@neogames.com");
         $(btn.getPasswordField()).shouldBe(enabled).setValue("test1234");
         $(btn.getSighnInButton()).shouldBe(enabled).click();
         $(btn.getMyAccountButton()).shouldBe(visible);

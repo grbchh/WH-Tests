@@ -26,9 +26,12 @@ public class Buttons {
     private String agreementCheckbox3 = "mwc-min-age-wh.mwc-reg-info > mwc-checkbox:nth-child(1) > label:nth-child(1) > i:nth-child(2)";
     private String agreementCheckbox4 = "mwc-privacy-policy-wh.mwc-reg-info > mwc-checkbox:nth-child(1) > label:nth-child(1) > i:nth-child(2)";
     private String AfterRegiDepositButton = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__footer.ng-scope > div > mwc-reg-step3-footer-area-wh > div > div > button";
-    private String AfterRegiUnactiveDocUploadButton = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__body.ng-scope > div > div > div.mwc-wh-limited-account-content > div > mwc-upload-document-wrapper > div > mwc-doc-upload > div > div > div > div > mwc-doc-upload-form > form > div.mwc-form-group.mwc-no-margin-bottom > div";
+    private String DocUploadButton = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__body.ng-scope > div > div > div.mwc-wh-limited-account-content > div:nth-child(1) > mwc-upload-document-wrapper > div > mwc-doc-upload";
+    private String AfterRegiOnfindoVerificationField = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__body.ng-scope > div > div > div.mwc-wh-limited-account-content > div:nth-child(2) > mwc-onfido-doc-upload > div:nth-child(3) > p";
+
     private String BackButton = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__footer.ng-scope > div > mwc-reg-step2-footer-web-default > div > mwc-reg-first-step-link > div > button";
-    private String FinishRegiErrorText = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__body.ng-scope > div > div.mwc-reg-wizard > div.mwc-reg-content.ng-scope > div > div";
+    private String FinishRegiErrorText = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__body.ng-scope > div > div.mwc-reg-wizard > div.mwc-reg-content.ng-scope > div > div > p > span";
+    private String FinishRegiErrorTextTwo = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__body.ng-scope > div > div.mwc-reg-wizard > div.mwc-reg-content.ng-scope > div > div > p > span";
     private String LoadingScreenAfterSubmitBtn = "#loadingLogo > img";
     private String IDTypeDropdown = "#registration-form > div > mwc-registration-inputs-order > mwc-reg-document > div > div > div:nth-child(1) > div > select";
     //Driving license
@@ -38,6 +41,15 @@ public class Buttons {
     private String IDExpiresYearDropdown = "#registration-form > div > mwc-registration-inputs-order > mwc-reg-document > div > div > div.mwc-form-group.ng-pristine.ng-untouched.ng-empty.ng-invalid.ng-invalid-required.ng-valid-valid-date.ng-valid-min.ng-valid-max > div > div:nth-child(4) > select";
     private String DriverLicenseStateDropdown = "<select class=\"mwc-form-control mwc-selectpicker mwc-f4 mwc-r mwc-t3 ng-pristine ng-valid ng-not-empty ng-valid-required ng-touched\" name=\"DocumentIssuePlace\" data-mwc-img=\"\" type=\"background\" mwcsrc=\"dropdown.png\" ng-model=\"$ctrl.model.DocumentIssuePlace\" ng-options=\"state.Code as state.Code for state in $ctrl.states\" ng-required=\"true\" style=\"background-image: url(&quot;https://download.neo.il.us.gpt.williamhill-test.com/secure/MWC/2022.01_509006/assets/base/dropdown.png?bid=509006&quot;);\" required=\"required\"><option label=\"AL\" value=\"string:AL\">AL</option><option label=\"AK\" value=\"string:AK\">AK</option><option label=\"AZ\" value=\"string:AZ\">AZ</option><option label=\"AR\" value=\"string:AR\">AR</option><option label=\"CA\" value=\"string:CA\">CA</option><option label=\"CO\" value=\"string:CO\">CO</option><option label=\"CT\" value=\"string:CT\">CT</option><option label=\"DE\" value=\"string:DE\">DE</option><option label=\"FL\" value=\"string:FL\">FL</option><option label=\"GA\" value=\"string:GA\">GA</option><option label=\"HI\" value=\"string:HI\">HI</option><option label=\"ID\" value=\"string:ID\">ID</option><option label=\"IL\" value=\"string:IL\">IL</option><option label=\"IN\" value=\"string:IN\">IN</option><option label=\"IA\" value=\"string:IA\">IA</option><option label=\"KS\" value=\"string:KS\">KS</option><option label=\"KY\" value=\"string:KY\">KY</option><option label=\"LA\" value=\"string:LA\">LA</option><option label=\"ME\" value=\"string:ME\">ME</option><option label=\"MD\" value=\"string:MD\">MD</option><option label=\"MA\" value=\"string:MA\">MA</option><option label=\"MI\" value=\"string:MI\">MI</option><option label=\"MN\" value=\"string:MN\">MN</option><option label=\"MS\" value=\"string:MS\">MS</option><option label=\"MO\" value=\"string:MO\">MO</option><option label=\"MT\" value=\"string:MT\">MT</option><option label=\"NE\" value=\"string:NE\">NE</option><option label=\"NV\" value=\"string:NV\" selected=\"selected\">NV</option><option label=\"NH\" value=\"string:NH\">NH</option><option label=\"NJ\" value=\"string:NJ\">NJ</option><option label=\"NM\" value=\"string:NM\">NM</option><option label=\"NY\" value=\"string:NY\">NY</option><option label=\"NC\" value=\"string:NC\">NC</option><option label=\"ND\" value=\"string:ND\">ND</option><option label=\"OH\" value=\"string:OH\">OH</option><option label=\"OK\" value=\"string:OK\">OK</option><option label=\"OR\" value=\"string:OR\">OR</option><option label=\"PA\" value=\"string:PA\">PA</option><option label=\"RI\" value=\"string:RI\">RI</option><option label=\"SC\" value=\"string:SC\">SC</option><option label=\"SD\" value=\"string:SD\">SD</option><option label=\"TN\" value=\"string:TN\">TN</option><option label=\"TX\" value=\"string:TX\">TX</option><option label=\"UT\" value=\"string:UT\">UT</option><option label=\"VT\" value=\"string:VT\">VT</option><option label=\"VA\" value=\"string:VA\">VA</option><option label=\"WA\" value=\"string:WA\">WA</option><option label=\"DC\" value=\"string:DC\">DC</option><option label=\"WV\" value=\"string:WV\">WV</option><option label=\"WI\" value=\"string:WI\">WI</option><option label=\"WY\" value=\"string:WY\">WY</option></select>";
 
+    private String AfterRegiContentField = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__body.ng-scope";
+
+    public String getAfterRegiContentField() {
+        return AfterRegiContentField;
+    }
+
+    public String getFinishRegiErrorTextTwo() {
+        return FinishRegiErrorTextTwo;
+    }
 
     public String getIDTypeDropdown() {
         return IDTypeDropdown;
@@ -167,8 +179,8 @@ public class Buttons {
         return AfterRegiDepositButton;
     }
 
-    public String getAfterRegiUnactiveDocUploadButton() {
-        return AfterRegiUnactiveDocUploadButton;
+    public String getDocUploadButton() {
+        return DocUploadButton;
     }
 
     public String getBackButton() {
@@ -177,5 +189,9 @@ public class Buttons {
 
     public String getGenderDropdown() {
         return GenderDropdown;
+    }
+
+    public String getAfterRegiOnfindoVerificationField() {
+        return AfterRegiOnfindoVerificationField;
     }
 }

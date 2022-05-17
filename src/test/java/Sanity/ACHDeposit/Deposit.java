@@ -26,6 +26,9 @@ public class Deposit {
         $(btn.getDepositButton()).shouldBe(Condition.enabled).click();
         System.out.println("Clicked on Deposit button");
 
+
+
+
         //Waiting for menu to load, sometimes may take a while
         $(btn.getSafeAndSecureElement()).shouldBe(Condition.visible);
         System.out.println("");

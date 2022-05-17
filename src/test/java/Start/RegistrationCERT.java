@@ -28,7 +28,7 @@ public class RegistrationCERT {
     @Before
     public void StartUp() {
         Configuration.startMaximized = true;
-        Configuration.timeout = 60000;
+        Configuration.timeout = 13000;
         Configuration.holdBrowserOpen = false;
         Configuration.screenshots = true;
         BasicConfigurator.configure();

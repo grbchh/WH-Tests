@@ -6,13 +6,11 @@ import Start.URL;
 import Tools.RandomNumberGenerator;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.WebDriverRunner;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static com.codeborne.selenide.Condition.disappear;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.sleep;
 
 public class RegistrationProd {
     Credentials Creds = new Credentials();
@@ -95,45 +93,62 @@ public class RegistrationProd {
         $(Button.getAgreementCheckbox4()).click();
         System.out.println("Checkboxes ticked");
 
-        // Final Submit Button
-        $(Button.getFinishRegiButton()).shouldBe(Condition.visible).click();
+        // 1st tap
+        $(Button.getFinishRegiButton()).shouldBe(Condition.enabled).click();
         System.out.println("Submit button pressed");
+        $(Button.getLoadingScreenAfterSubmitBtn()).should(disappear);
+        $(Button.getFinishRegiErrorText()).should(appear);
 
-        //Flow If regi didnt pass after 1st try
-        sleep(2000);
-        if ($(Button.getFinishRegiErrorText()).isDisplayed()) {
-            do {
-                System.out.println("Okay, one more click on Submit Button");
-                $(Button.getFinishRegiButton()).shouldBe(Condition.visible).click();
-                $(Button.getLoadingScreenAfterSubmitBtn()).should(disappear);
-                $(Button.getLoadingScreenAfterSubmitBtn()).should(disappear);
-            }
-            while ($(Button.getFinishRegiErrorText()).isDisplayed());
-        }else{
-            System.out.println("Fuck");
-        }
+        //2nd tap
+        $(Button.getFinishRegiButton()).shouldBe(Condition.enabled).click();
+        System.out.println("I said submit!");
+        $(Button.getLoadingScreenAfterSubmitBtn()).should(disappear);
+        $(Button.getFinishRegiErrorText()).should(appear);
 
+        //3rd tap
+        $(Button.getFinishRegiButton()).shouldBe(Condition.enabled).click();
+        System.out.println("I SAID SUBMIT!!!");
+        $(Button.getLoadingScreenAfterSubmitBtn()).should(disappear);
 
         //Something I need to set wait to, so webdriver dont start verification below instantly
         $((Button.getBackButton())).should(disappear);
+        $((Button.getAfterRegiContentField())).shouldBe(visible);
 
-        //This is verification of account type created
-        if($(Button.getAfterRegiDepositButton()).isDisplayed())
-        {
-            System.out.println("Registration passed, here your email:    " + Creds.getEmail());
-            System.out.println("Verified user registered! Yay!");
-        }
-        else if ($(Button.getAfterRegiUnactiveDocUploadButton()).isDisplayed())
-        {
-            System.out.println("Registration passed, here your email:    " + Creds.getEmail());
-            System.out.println("Its an unverified user! Noice!");
-        }
-        else {
+        if ($(Button.getAfterRegiOnfindoVerificationField()).isDisplayed()||$(Button.getDocUploadButton()).isDisplayed()){
+            System.out.println("Hippity Hoppity!");
+            System.out.println("This account:");
+            System.out.println(Creds.getEmail());
+            System.out.println("Is your property");
+        }else{
             Assert.fail();
+            System.out.println("No regi for you, fag");
         }
+
+
+
+
+
+
+
+//        //This is verification of account type created
+//        if($(Button.getAfterRegiDepositButton()).isDisplayed())
+//        {
+//            System.out.println("Registration passed, here your email:    " + Creds.getEmail());
+//            System.out.println("Verified user registered! Yay!");
+//        }
+//        else if ($(Button.getAfterRegiUnactiveDocUploadButton()).isDisplayed())
+//        {
+//            System.out.println("Registration passed, here your email:    " + Creds.getEmail());
+//            System.out.println("Its an unverified user! Noice!");
+//        }
+//        else if ($(Button.getAfterRegiOnfindoVerificationField()).isDisplayed())
+//        {
+//            System.out.println("Registration passed, here your email:    " + Creds.getEmail());
+//            System.out.println("Its an unverified user! Onfindoooo!");
+//        }
 //        else {
-//            System.out.println("lol, bro, idk");
-//            Configuration.holdBrowserOpen = true;
+//            Assert.fail();
+//            System.out.println("IDK what the fuck I did registered,but here's your email:    " + Creds.getEmail());
 //        }
     }
 
@@ -218,41 +233,50 @@ public class RegistrationProd {
         // Final Submit Button
         $(Button.getFinishRegiButton()).shouldBe(Condition.visible).click();
         System.out.println("Submit button pressed");
-        sleep(5000);
-
+        $(Button.getLoadingScreenAfterSubmitBtn()).should(disappear);
         //Flow If regi didnt pass after 1st try
+        $(Button.getFinishRegiButton()).shouldBe(Condition.enabled).click();
+        System.out.println("I said submit!");
 
-        if ($(Button.getFinishRegiErrorText()).isDisplayed()) {
-        do {
-                System.out.println("Okay, one more click on Submit Button");
-                $(Button.getFinishRegiButton()).shouldBe(Condition.enabled).click();
-                $(Button.getLoadingScreenAfterSubmitBtn()).should(disappear);
-                $(Button.getLoadingScreenAfterSubmitBtn()).should(disappear);
-            sleep(5000);
+        System.out.println("Okay, one more click on Submit Button");
+        $(Button.getFinishRegiButton()).shouldBe(Condition.enabled).click();
+        $(Button.getLoadingScreenAfterSubmitBtn()).should(disappear);
+        $(Button.getFinishRegiButton()).shouldBe(Condition.enabled).click();
 
-        }
-            while ($(Button.getFinishRegiErrorText()).isDisplayed());
-        }else{
-            System.out.println("Fuck");
-        }
+        //while...do which fails
+
+//        if ($(Button.getFinishRegiErrorText()).isDisplayed()) {
+//        do {
+//                System.out.println("Okay, one more click on Submit Button");
+//                $(Button.getFinishRegiButton()).shouldBe(Condition.enabled).click();
+//                $(Button.getLoadingScreenAfterSubmitBtn()).should(disappear);
+//                $(Button.getLoadingScreenAfterSubmitBtn()).should(disappear);
+//            sleep(5000);
+//
+//        }
+//            while ($(Button.getFinishRegiErrorText()).isDisplayed());
+//        }else{
+//            System.out.println("Fuck");
+//        }
 
         //Something I need to set wait to, so webdriver dont start verification below instantly
         $((Button.getBackButton())).should(disappear);
+        $(Button.getAfterRegiOnfindoVerificationField()).shouldBe(visible);
 
-        //This is verification of account type created
-        if($(Button.getAfterRegiDepositButton()).isDisplayed())
-        {
-            System.out.println("Registration passed, here your email:    " + Creds.getEmail());
-            System.out.println("Verified user registered! Yay!");
-        }
-        else if ($(Button.getAfterRegiUnactiveDocUploadButton()).isDisplayed())
-        {
-            System.out.println("Registration passed, here your email:    " + Creds.getEmail());
-            System.out.println("Its an unverified user! Noice!");
-        }
-        else {
-            Assert.fail();
-        }
+//        //This is verification of account type created
+//        if($(Button.getAfterRegiDepositButton()).isDisplayed())
+//        {
+//            System.out.println("Registration passed, here your email:    " + Creds.getEmail());
+//            System.out.println("Verified user registered! Yay!");
+//        }
+//        else if ($(Button.getAfterRegiUnactiveDocUploadButton()).isDisplayed())
+//        {
+//            System.out.println("Registration passed, here your email:    " + Creds.getEmail());
+//            System.out.println("Its an unverified user! Noice!");
+//        }
+//        else {
+//            Assert.fail();
+//        }
 //        else {
 //            System.out.println("lol, bro, idk");
 //            Configuration.holdBrowserOpen = true;

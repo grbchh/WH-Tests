@@ -13,7 +13,7 @@ import org.junit.Test;
 
 import static com.codeborne.selenide.Selenide.open;
 
-public class LimitsGPT {
+public class LimitsGPT_B {
     Sanity.RegistrationUAT.RegistrationGPT RegistrationGPT = new Sanity.RegistrationUAT.RegistrationGPT();
     Logout logout = new Logout();
     Deposit cc = new Deposit();

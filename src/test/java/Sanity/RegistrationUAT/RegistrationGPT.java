@@ -8,9 +8,9 @@ import com.codeborne.selenide.*;
 import org.junit.Assert;
 import org.junit.Test;
 
+import static com.codeborne.selenide.Condition.*;
 import static org.junit.Assert.assertEquals;
 
-import static com.codeborne.selenide.Condition.disappear;
 import static com.codeborne.selenide.Selenide.$;
 
 public class RegistrationGPT {
@@ -33,15 +33,16 @@ public class RegistrationGPT {
         $(Button.getRegiButton()).shouldBe(Condition.enabled).click();
 
         //Name
-
-        if (WebDriverRunner.url().equals(link.getNjGPT())){
-            Filler.CandiceMmagentaFP();
-            System.out.println("Hello, Candice!");
-        }else{
-            Filler.CoresCherylFP();
-            System.out.println("Hello, Cores!");
-//            Filler.RandomFP();
-        }
+        Filler.ACHGuyFP();
+//        Filler.RandomFP();
+//
+//        if (WebDriverRunner.url().equals(link.getNjGPT())){
+//            Filler.CandiceMmagentaFP();
+//            System.out.println("Hello, Candice!");
+//        }else{
+//            Filler.CoresCherylFP();
+//            System.out.println("Hello, Cores!");
+//        }
 
         //Email
         System.out.println("Typing email...");
@@ -67,9 +68,9 @@ public class RegistrationGPT {
         if ($(Button.getIDTypeDropdown()).isDisplayed()){
             System.out.println("Typing DL...");
             $(Button.getDrivingLicenseNumberField()).setValue(Creds.getDriverLicense());
-            $(Button.getIDExpiresDayDropdown()).selectOption(13);
+            $(Button.getIDExpiresDayDropdown()).selectOptionContainingText("13");
             $(Button.getIDExpiresMonthDropdown()).selectOptionContainingText("8");
-            $(Button.getIDExpiresYearDropdown()).selectOption(2025);
+            $(Button.getIDExpiresYearDropdown()).selectOptionContainingText("2025");
 //            $((Button.getIDTypeDropdown())).selectOption("Driving license");
         }
 
@@ -79,7 +80,8 @@ public class RegistrationGPT {
 
         //Second Registration Page
         System.out.println("Entering stronk password...");
-        $(Button.getPasswordField()).setValue("test1234");
+        $(Button.getPasswordField()).should(appear).setValue("test1234");
+
 
         //dropdown 1st question
         System.out.println("Typing first secret question...");
@@ -92,13 +94,14 @@ public class RegistrationGPT {
         $(Button.getSecurityQuestionField2()).setValue(Creds.getAnswerSecurityQs1());
 
         //SSN & ADRESS
+        Filler.ACHGuySP();
+//        Filler.RandomSP();
 
-        if (WebDriverRunner.url().equals(link.getNjGPT())){
-            Filler.CandiceMmagentaSP();
-        }else{
-            Filler.CoresCherylSP();
-//            Filler.RandomSP();
-        }
+//        if (WebDriverRunner.url().equals(link.getNjGPT())){
+//            Filler.CandiceMmagentaSP();
+//        }else{
+//            Filler.CoresCherylSP();
+//        }
 
         //Checkboxes
         $(Button.getAgreementCheckbox1()).click();
@@ -124,6 +127,7 @@ public class RegistrationGPT {
 
         //Something I need to set wait to, so webdriver dont start verification below instantly
         $((Button.getBackButton())).should(disappear);
+        $((Button.getAfterRegiContentField())).shouldBe(visible);
 
         //This is verification of account type created
         if($(Button.getAfterRegiDepositButton()).isDisplayed())
