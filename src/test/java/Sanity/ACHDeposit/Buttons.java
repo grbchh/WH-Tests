@@ -27,6 +27,8 @@ public class Buttons {
     private String SubmitButton = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__body.ng-scope > div > div > mwc-cashier-summary > form > mwc-cashier-summary-payment-buttons";
 
     private String DepositMenuAppearCheckHeader = "#widget-title";
+
+    private String ErrorField = "#mwc-root > div > div.mwc-widget.mwc-responsive > div > div.mwc-app-container__content > div.mwc-widget__body.ng-scope > div > div > mwc-cashier-error > div > div.mwc-t3.mwc-cashier-error-message.mwc-form-error-message > mwc-error-message-factory > mwc-error-message-default > span > span";
     /* / Getters */
 
     public String getAccountMenuButton() {

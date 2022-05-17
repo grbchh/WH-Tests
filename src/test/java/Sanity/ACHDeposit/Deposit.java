@@ -31,12 +31,14 @@ public class Deposit {
 
         //Waiting for menu to load, sometimes may take a while
         $(btn.getSafeAndSecureElement()).shouldBe(Condition.visible);
-        System.out.println("");
+        System.out.println("We are loaded");
 
 
         //Entering amount
-        $(btn.getDepositAmountField()).should(appear).setValue("33");
-        System.out.println("Entered 33$ as deposit amount");
+        if($(btn.getDepositAmountField()).is(empty)) {
+            $(btn.getDepositAmountField()).should(appear).setValue("33");
+            System.out.println("Entered 33$ as deposit amount");
+        }
 
         //Pressing continue
         $(btn.getContinueButton()).click();

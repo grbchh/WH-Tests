@@ -17,7 +17,8 @@ public class Credentials {
     RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
 
 
-    private String email ="qa__" +  firstName + lastName + "@neogames.com";
+//    private String email ="qa__" +  firstName + lastName + "@neogames.com";
+    private String email ="qa__CristobalPacocha@neogames.com";
 
 //     private String email = "qa__"+"Zefirka"+"@neogames.com";
 //    private String email = "qa_"+"heh"+"@neogames.com";
@@ -36,8 +37,8 @@ public class Credentials {
     private String ssn = "4645";
     //_______________________________________________________________________________________________________________
     private int birthdayMonth = 6;
-    private int birthdayDay = 6;
-    private String birthdayYear = "1989";
+    private int birthdayDay = 26;
+    private String birthdayYear = "1980";
 
     private String answerSecurityQs0 = "Sandwich";
     private String answerSecurityQs1 = "Cat";

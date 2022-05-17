@@ -33,8 +33,8 @@ public class RegistrationGPT {
         $(Button.getRegiButton()).shouldBe(Condition.enabled).click();
 
         //Name
-        Filler.ACHGuyFP();
-//        Filler.RandomFP();
+//        Filler.ACHGuyFP();
+        Filler.RandomFP();
 //
 //        if (WebDriverRunner.url().equals(link.getNjGPT())){
 //            Filler.CandiceMmagentaFP();
@@ -94,8 +94,8 @@ public class RegistrationGPT {
         $(Button.getSecurityQuestionField2()).setValue(Creds.getAnswerSecurityQs1());
 
         //SSN & ADRESS
-        Filler.ACHGuySP();
-//        Filler.RandomSP();
+//        Filler.ACHGuySP();
+        Filler.RandomSP();
 
 //        if (WebDriverRunner.url().equals(link.getNjGPT())){
 //            Filler.CandiceMmagentaSP();
