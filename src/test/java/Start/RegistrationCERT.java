@@ -36,87 +36,99 @@ public class RegistrationCERT {
 
 
     @Test
-    public void RegistrationTN_CERT() {
-        open(run.getTnCert());
+    public void SignUp_CERT_Tennesey() {
+        open(run.getTennesseCert());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationVA_CERT() {
+    public void SignUp_CERT_Virginia() {
         open(run.getVaGpt());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationNJ_CERT() {
-        open(run.getNjCERT());
+    public void SignUp_CERT_NewJersey() {
+        open(run.getNewJerseyCert());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationIN_CERT() {
-        open(run.getInCERT());
+    public void SignUp_CERT_Indiana() {
+        open(run.getIndianaCert());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationCO_CERT() {
-        open(run.getCoCert());
+    public void SignUp_CERT_Colorado() {
+        open(run.getColoradoCert());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationWV_CERT() {
-        open(run.getWvCERT());
+    public void SignUp_CERT_WestVirginia() {
+        open(run.getWestVirginiaCert());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationIA_CERT() {
+    public void SignUp_CERT_Iowa() {
         open(run.getIaCert());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationMI_CERT() {
-        open(run.getMiCert());
+    public void SignUp_CERT_Michigan() {
+        open(run.getMichiganCert());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationIL_CERT(){
+    public void SignUp_CERT_Illinois(){
         open(run.getIlCert());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationAZ_CERT() {
-        open(run.getAzCert());
+    public void SignUp_CERT_Arizona() {
+        open(run.getArizonaCert());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationLA_CERT() {
-        open(run.getLaCert());
+    public void SignUp_CERT_Louisiana() {
+        open(run.getLouisianaCert());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationNV_CERT() {
-        open(run.getNvCert());
+    public void SignUp_CERT_Nevada() {
+        open(run.getNevadaCert());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationNY_CERT() {
-        open(run.getNyCert());
+    public void SignUp_CERT_NewYork() {
+        open(run.getNewYorkCert());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationON_CERT() {
-        open(run.getOnCert());
+    public void SignUp_CERT_Ontario() {
+        open(run.getOntarioCert());
         RegistrationGPT.Flow();
     }
+
+    @Test
+    public void SignUp_CERT_Wyoming() {
+        open(run.getWyomingCert());
+        RegistrationGPT.Flow();
+    }
+    @Test
+    public void SignUp_CERT_Pensilvania() {
+        open(run.getPennsylvaniaCert());
+        RegistrationGPT.Flow();
+    }
+
 
 }

@@ -25,80 +25,183 @@ public class DepositCC {
     }
 
     @Test
-    public void DepositCC_AZ() {
-        open(run.getAzGpt());
+    public void Deposit_CC_GPT_Arizona() {
+        open(run.getArizonaGpt());
         login.CClogin();
         cc.flow();
     }
     @Test
-    public void DepositCC_CO() {
-        open(run.getCoGpt());
+    public void Deposit_CC_GPT_Colorado() {
+        open(run.getColoradoGpt());
         login.CClogin();
         cc.flow();
     }
     @Test
-    public void DepositCC_IA() {
+    public void Deposit_CC_GPT_Iowa() {
         open(run.getIaGpt());
         login.CClogin();
         cc.flow();
     }
     @Test
-    public void DepositCC_IL() {
+    public void Deposit_CC_GPT_Illinois() {
         open(run.getIlGpt());
         login.CClogin();
         cc.flow();
     }
     @Test
-    public void DepositCC_TN() {
-        open(run.getTnGpt());
+    public void Deposit_CC_GPT_Tennesey() {
+        open(run.getTennesseGpt());
         login.CClogin();
         cc.flow();
     }
     @Test
-    public void DepositCC_VA() {
+    public void Deposit_CC_GPT_Virginia() {
         open(run.getVaGpt());
         login.CClogin();
         cc.flow();
     }
     @Test
-    public void DepositCC_NJ() {
-        open(run.getNjGPT());
+    public void Deposit_CC_GPT_NewJersey() {
+        open(run.getNewJerseyGpt());
         login.CClogin();
         cc.flow();
     }
     @Test
-    public void DepositCC_IN() {
-        open(run.getInGPT());
+    public void Deposit_CC_GPT_Indiana() {
+        open(run.getIndianaGpt());
         login.CClogin();
         cc.flow();
     }
     @Test
-    public void DepositCC_WV() {
-        open(run.getWvGPT());
+    public void Deposit_CC_GPT_WestVirginia() {
+        open(run.getWestVirginiaGpt());
         login.CClogin();
         cc.flow();
     }
     @Test
-    public void DepositCC_LA() {
-        open(run.getLaGpt());
+    public void Deposit_CC_GPT_Louisiana() {
+        open(run.getLouisianaGpt());
         login.CClogin();
         cc.flow();
     }
     @Test
-    public void DepositCC_NV() {
-        open(run.getNvGpt());
+    public void Deposit_CC_GPT_Nevada() {
+        open(run.getNevadaGpt());
         login.CClogin();
         cc.flow();
     }
     @Test
-    public void DepositCC_NY() {
-        open(run.getNyGpt());
+    public void Deposit_CC_GPT_NewYork() {
+        open(run.getNewYorkGpt());
         login.CClogin();
         cc.flow();
     }
     @Test
-    public void DepositCC_ON() {
-        open(run.getOnGpt());
+    public void Deposit_CC_GPT_Ontarion() {
+        open(run.getOntarioGpt());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_GPT_Wyoming() {
+        open(run.getWyomingGpt());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_GPT_Pensilvania() {
+        open(run.getPaGpt());
+        login.CClogin();
+        cc.flow();
+    }
+
+    @Test
+    public void Deposit_CC_CERT_Arizona() {
+        open(run.getArizonaCert());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_CERT_Colorado() {
+        open(run.getColoradoCert());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_CERT_Iowa() {
+        open(run.getIaCert());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_CERT_Illinois() {
+        open(run.getIlCert());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_CERT_Tennesey() {
+        open(run.getTennesseCert());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_CERT_Virginia() {
+        open(run.getVaCert());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_CERT_NewJersey() {
+        open(run.getNewJerseyCert());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_CERT_Indiana() {
+        open(run.getIndianaCert());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_CERT_WestVirginia() {
+        open(run.getWestVirginiaCert());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_CERT_Louisiana() {
+        open(run.getLouisianaCert());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_CERT_Nevada() {
+        open(run.getNevadaCert());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_CERT_NewYork() {
+        open(run.getNewYorkCert());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_CERT_Ontarion() {
+        open(run.getOntarioCert());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_CERT_Wyoming() {
+        open(run.getWyomingCert());
+        login.CClogin();
+        cc.flow();
+    }
+    @Test
+    public void Deposit_CC_CERT_Pennsylvania() {
+        open(run.getPennsylvaniaCert());
         login.CClogin();
         cc.flow();
     }

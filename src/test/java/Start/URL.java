@@ -2,7 +2,6 @@ package Start;
 
 import Info.Links;
 import Sanity.RegistrationUAT.Credentials;
-import Sanity.RegistrationUAT.RegistrationGPT;
 
 public class URL {
     //Info
@@ -11,7 +10,7 @@ public class URL {
 
 
     ///////////////
-    private String Link = RunTestOn.getTnProd();
+    private String Link = RunTestOn.getTennesseProd();
 //    private String LoginEmail = "oleksandrh@neogames.com";
       private String LoginEmail = RegiGPT.getEmail();
 

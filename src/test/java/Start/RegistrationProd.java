@@ -6,7 +6,6 @@ import Sanity.BasicFLows.Limits.Flow;
 import Sanity.BasicFLows.Login.Login;
 import Sanity.BasicFLows.Logout.Logout;
 import Sanity.CreditCardDeposit.Deposit;
-import Sanity.RegistrationUAT.RegistrationGPT;
 import com.codeborne.selenide.Configuration;
 import org.apache.log4j.BasicConfigurator;
 import org.junit.Before;
@@ -37,7 +36,7 @@ public class RegistrationProd {
 
     @Test
     public void RegistrationTN_Prod() {
-        open(run.getTnProd());
+        open(run.getTennesseProd());
         RegistrationProd.Flow();
     }
 
@@ -49,25 +48,25 @@ public class RegistrationProd {
 
     @Test
     public void RegistrationNJ_Prod() {
-        open(run.getNjPROD());
+        open(run.getNewJerseyProd());
         RegistrationProd.Flow();
     }
 
     @Test
     public void RegistrationIN_Prod() {
-        open(run.getInPROD());
+        open(run.getIndianaProp());
         RegistrationProd.Flow();
     }
 
     @Test
     public void RegistrationCO_Prod() {
-        open(run.getCoProd());
+        open(run.getColoradoProd());
         RegistrationProd.Flow();
     }
 
     @Test
     public void RegistrationWV_Prod() {
-        open(run.getWvProd());
+        open(run.getWestVirginiaProd());
         RegistrationProd.Flow();
     }
 
@@ -91,32 +90,42 @@ public class RegistrationProd {
 
     @Test
     public void RegistrationAZ_Prod() {
-        open(run.getAzProd());
+        open(run.getArizonaProd());
         RegistrationProd.Flow();
     }
 
     @Test
     public void RegistrationLA_Prod() {
-        open(run.getLaProd());
+        open(run.getLouisianaProd());
         RegistrationProd.Flow();
     }
 
     @Test
     public void RegistrationNV_Prod() {
-        open(run.getNvProd());
+        open(run.getNevadaProd());
         RegistrationProd.Flow();
     }
 
     @Test
     public void RegistrationNY_Prod() {
-        open(run.getNyProd());
+        open(run.getNewYorkProd());
         RegistrationProd.Flow();
     }
 
     @Test
     public void RegistrationON_Prod() {
-        open(run.getOnProd());
+        open(run.getOntarioProd());
         RegistrationProd.Flow();
     }
 
+    @Test
+    public void RegistrationWY_Prod() {
+        open(run.getWyomingProd());
+        RegistrationProd.Flow();
+    }
+    @Test
+    public void RegistrationPA_Prod() {
+        open(run.getPennsylvaniaProd());
+        RegistrationProd.Flow();
+    }
 }

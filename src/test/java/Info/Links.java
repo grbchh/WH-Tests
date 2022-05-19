@@ -2,25 +2,25 @@ package Info;
 
 public class Links {
     //__________New Jersey_________
-    private String NjGPT = ("https://gpt.williamhill-test.com/us/nj/bet");
-    private String NjCERT = ("https://usc.williamhill-test.com/us/nj/bet");
-    private String NjPROD = ("https://www.williamhill.com/us/nj/bet/");
+    private String NewJerseyGpt = ("https://gpt.williamhill-test.com/us/nj/bet");
+    private String NewJerseyCert = ("https://usc.williamhill-test.com/us/nj/bet");
+    private String NewJerseyProd = ("https://www.williamhill.com/us/nj/bet/");
     //___________Indiana___________
-    private String InCERT = ("https://usc.williamhill-test.com/us/in/bet");
-    private String InGPT = ("https://gpt.williamhill-test.com/us/in/bet");
-    private String InPROD = ("https://www.williamhill.com/us/in/bet/");
+    private String IndianaCert = ("https://usc.williamhill-test.com/us/in/bet");
+    private String IndianaGpt = ("https://gpt.williamhill-test.com/us/in/bet");
+    private String IndianaProp = ("https://www.williamhill.com/us/in/bet/");
     //__________West Virgina_______
-    private String WvGPT = ("https://gpt.williamhill-test.com/us/wv/bet");
-    private String WvCERT = ("https://usc.williamhill-test.com/us/wv/bet");
-    private String WvProd = ("https://www.williamhill.com/us/wv/bet/");
+    private String WestVirginiaGpt = ("https://gpt.williamhill-test.com/us/wv/bet");
+    private String WestVirginiaCert = ("https://usc.williamhill-test.com/us/wv/bet");
+    private String WestVirginiaProd = ("https://www.williamhill.com/us/wv/bet/");
     //__________ Colorado _________
-    private String CoGpt = ("https://gpt.williamhill-test.com/us/co/bet/");
-    private String CoCert = ("https://usc.williamhill-test.com/us/co/bet/");
-    private String CoProd = ("https://www.williamhill.com/us/co/bet/");
+    private String ColoradoGpt = ("https://gpt.williamhill-test.com/us/co/bet/");
+    private String ColoradoCert = ("https://usc.williamhill-test.com/us/co/bet/");
+    private String ColoradoProd = ("https://www.williamhill.com/us/co/bet/");
     //_________ Tennesse __________
-    private String TnGpt = ("https://gpt.williamhill-test.com/us/tn/bet/");
-    private String TnCert = ("https://usc.williamhill-test.com/us/tn/bet/");
-    private String TnProd = ("https://www.williamhill.com/us/tn/bet");
+    private String TennesseGpt = ("https://gpt.williamhill-test.com/us/tn/bet/");
+    private String TennesseCert = ("https://usc.williamhill-test.com/us/tn/bet/");
+    private String TennesseProd = ("https://www.williamhill.com/us/tn/bet");
     //__________ Iowa _____________
     private String IaGpt = ("https://gpt.williamhill-test.com/us/ia/bet");
     private String IaCert = ("https://usc.williamhill-test.com/us/ia/bet");
@@ -34,130 +34,182 @@ public class Links {
     private String IlCert = ("https://usc.williamhill-test.com/us/il/bet/");
     private String IlProd = ("https://internalprod.us.williamhill.com/us/il/bet");
     //__________ Michigan _________
-    private String MiGpt = ("https://gpt.williamhill-test.com/us/mi/bet");
-    private String MiCert = ("https://usc.williamhill-test.com/us/mi/bet");
-    private String MiProd = ("https://www.williamhill.com/us/mi/bet");
+    private String MichiganGpt = ("https://gpt.williamhill-test.com/us/mi/bet");
+    private String MichiganCert = ("https://usc.williamhill-test.com/us/mi/bet");
+    private String MichiganProd = ("https://www.williamhill.com/us/mi/bet");
     //__________ Arizona _________
-    private String AzGpt = ("https://gpt.williamhill-test.com/us/az/bet");
-    private String AzCert = ("https://usc.williamhill-test.com/us/az/bet");
-    private String AzProd = ("https://internalprod.us.williamhill.com/us/az/bet");
-    //__________ Arizona _________
-    private String LaGpt = ("https://gpt.williamhill-test.com/us/la/bet");
-    private String LaCert = ("https://usc.williamhill-test.com/us/la/bet");
-    private String LaProd = ("https://internalprod.us.williamhill.com/us/la/bet");
-    //__________ Arizona _________
-    private String NvGpt = ("https://gpt.williamhill-test.com/us/nv/bet");
-    private String NvCert = ("https://usc.williamhill-test.com/us/nv/bet");
-    private String NvProd = ("https://internalprod.us.williamhill.com/us/nv/bet");
+    private String ArizonaGpt = ("https://gpt.williamhill-test.com/us/az/bet");
+    private String ArizonaCert = ("https://usc.williamhill-test.com/us/az/bet");
+    private String ArizonaProd = ("https://internalprod.us.williamhill.com/us/az/bet");
+    //__________ Louisiana _________
+    private String LouisianaGpt = ("https://gpt.williamhill-test.com/us/la/bet");
+    private String LouisianaCert = ("https://usc.williamhill-test.com/us/la/bet");
+    private String LouisianaProd = ("https://internalprod.us.williamhill.com/us/la/bet");
+    //__________ Nevada _________
+    private String NevadaGpt = ("https://gpt.williamhill-test.com/us/nv/bet");
+    private String NevadaCert = ("https://usc.williamhill-test.com/us/nv/bet");
+    private String NevadaProd = ("https://internalprod.us.williamhill.com/us/nv/bet");
+    //__________ New York _________
+    private String NewYorkGpt = ("https://gpt.williamhill-test.com/us/ny/bet");
+    private String NewYorkCert = ("https://usc.williamhill-test.com/us/ny/bet");
+    private String NewYorkProd = ("https://internalprod.us.williamhill.com/us/ny/bet");
+    //__________ Ontario _________
+    private String OntarioGpt = ("https://gpt.williamhill-test.com/us/on/bet");
+    private String OntarioCert = ("https://usc.williamhill-test.com/us/on/bet");
+    private String OntarioProd = ("https://internalprod.us.williamhill.com/us/on/bet");
+    //__________ NevadaCs _________
+    private String NevadaCsGpt = "https://wh.gpt.l5y.app/us/nv/bet";
+    private String NevadaCsCert = "https://wh.gpt.l5y.app/us/nv/bet";
+    private String NevadaCsProd = "https://wh.gpt.l5y.app/us/nv/bet";
+    //__________ Wyoming _________
+    private String WyomingGpt = ("https://gpt.williamhill-test.com/us/wy/bet");
+    private String WyomingCert = ("https://usc.williamhill-test.com/us/wy/bet");
+    private String WyomingProd = ("https://internalprod.us.williamhill.com/us/wy/bet");
+    //__________ Pennsylvania _________
+    private String PennsylvaniaGpt = "https://wh.gpt.l5y.app/us/nv/bet";
+    private String PennsylvaniaCert = "https://wh.usc.l5y.app/us/nv/bet";
+    private String PennsylvaniaProd = "https://internalprod.us.williamhill.com/us/pa/bet";
     //__________________________________________________________________________________________________________________
-    private String NyGpt = ("https://gpt.williamhill-test.com/us/ny/bet");
-    private String NyCert = ("https://usc.williamhill-test.com/us/ny/bet");
-    private String NyProd = ("https://internalprod.us.williamhill.com/us/ny/bet");
-    //__________________________________________________________________________________________________________________
-    private String OnGpt = ("https://gpt.williamhill-test.com/us/on/bet");
-    private String OnCert = ("https://usc.williamhill-test.com/us/on/bet");
-    private String OnProd = ("https://internalprod.us.williamhill.com/us/on/bet");
-    //__________________________________________________________________________________________________________________
-    private String NVWGPT = "https://wh.gpt.l5y.app/us/nv/bet";
 
-    public String getNVWGPT() {
-        return NVWGPT;
+
+    public String getMichiganProd() {
+        return MichiganProd;
     }
 
-    public String getOnGpt() {
-        return OnGpt;
+    public String getNevadaCsCert() {
+        return NevadaCsCert;
     }
 
-    public String getOnCert() {
-        return OnCert;
+    public String getNevadaCsProd() {
+        return NevadaCsProd;
     }
 
-    public String getOnProd() {
-        return OnProd;
+    public String getPennsylvaniaGpt() {
+        return PennsylvaniaGpt;
     }
 
-    public String getNyGpt() {
-        return NyGpt;
+    public String getPaGpt() {
+        return PennsylvaniaGpt;
     }
 
-    public String getNyCert() {
-        return NyCert;
+    public String getPennsylvaniaCert() {
+        return PennsylvaniaCert;
     }
 
-    public String getNyProd() {
-        return NyProd;
+    public String getPennsylvaniaProd() {
+        return PennsylvaniaProd;
     }
 
-    public String getNvGpt() {
-        return NvGpt;
+    public String getWyomingGpt() {
+        return WyomingGpt;
     }
 
-    public String getNvCert() {
-        return NvCert;
+    public String getWyomingCert() {
+        return WyomingCert;
     }
 
-    public String getNvProd() {
-        return NvProd;
+    public String getWyomingProd() {
+        return WyomingProd;
     }
 
-    public String getNjGPT() {
-        return NjGPT;
+    public String getNevadaCsGpt() {
+        return NevadaCsGpt;
     }
 
-    public String getNjCERT() {
-        return NjCERT;
+    public String getOntarioGpt() {
+        return OntarioGpt;
     }
 
-    public String getNjPROD() {
-        return NjPROD;
+    public String getOntarioCert() {
+        return OntarioCert;
     }
 
-    public String getInCERT() {
-        return InCERT;
+    public String getOntarioProd() {
+        return OntarioProd;
     }
 
-    public String getInGPT() {
-        return InGPT;
+    public String getNewYorkGpt() {
+        return NewYorkGpt;
     }
 
-    public String getInPROD() {
-        return InPROD;
+    public String getNewYorkCert() {
+        return NewYorkCert;
     }
 
-    public String getWvGPT() {
-        return WvGPT;
+    public String getNewYorkProd() {
+        return NewYorkProd;
     }
 
-    public String getWvCERT() {
-        return WvCERT;
+    public String getNevadaGpt() {
+        return NevadaGpt;
     }
 
-    public String getWvProd() {
-        return WvProd;
+    public String getNevadaCert() {
+        return NevadaCert;
     }
 
-    public String getCoGpt() {
-        return CoGpt;
+    public String getNevadaProd() {
+        return NevadaProd;
     }
 
-    public String getCoCert() {
-        return CoCert;
+    public String getNewJerseyGpt() {
+        return NewJerseyGpt;
     }
 
-    public String getCoProd() {
-        return CoProd;
+    public String getNewJerseyCert() {
+        return NewJerseyCert;
     }
 
-    public String getTnGpt() {
-        return TnGpt;
+    public String getNewJerseyProd() {
+        return NewJerseyProd;
     }
 
-    public String getTnCert() {
-        return TnCert;
+    public String getIndianaCert() {
+        return IndianaCert;
     }
 
-    public String getTnProd() {
-        return TnProd;
+    public String getIndianaGpt() {
+        return IndianaGpt;
+    }
+
+    public String getIndianaProp() {
+        return IndianaProp;
+    }
+
+    public String getWestVirginiaGpt() {
+        return WestVirginiaGpt;
+    }
+
+    public String getWestVirginiaCert() {
+        return WestVirginiaCert;
+    }
+
+    public String getWestVirginiaProd() {
+        return WestVirginiaProd;
+    }
+
+    public String getColoradoGpt() {
+        return ColoradoGpt;
+    }
+
+    public String getColoradoCert() {
+        return ColoradoCert;
+    }
+
+    public String getColoradoProd() {
+        return ColoradoProd;
+    }
+
+    public String getTennesseGpt() {
+        return TennesseGpt;
+    }
+
+    public String getTennesseCert() {
+        return TennesseCert;
+    }
+
+    public String getTennesseProd() {
+        return TennesseProd;
     }
 
     public String getIaGpt() {
@@ -196,39 +248,39 @@ public class Links {
         return IlProd;
     }
 
-    public String getMiGpt() {
-        return MiGpt;
+    public String getMichiganGpt() {
+        return MichiganGpt;
     }
 
-    public String getMiCert() {
-        return MiCert;
+    public String getMichiganCert() {
+        return MichiganCert;
     }
 
     public String getMiProd() {
-        return MiProd;
+        return MichiganProd;
     }
 
-    public String getAzGpt() {
-        return AzGpt;
+    public String getArizonaGpt() {
+        return ArizonaGpt;
     }
 
-    public String getAzCert() {
-        return AzCert;
+    public String getArizonaCert() {
+        return ArizonaCert;
     }
 
-    public String getAzProd() {
-        return AzProd;
+    public String getArizonaProd() {
+        return ArizonaProd;
     }
 
-    public String getLaGpt() {
-        return LaGpt;
+    public String getLouisianaGpt() {
+        return LouisianaGpt;
     }
 
-    public String getLaCert() {
-        return LaCert;
+    public String getLouisianaCert() {
+        return LouisianaCert;
     }
 
-    public String getLaProd() {
-        return LaProd;
+    public String getLouisianaProd() {
+        return LouisianaProd;
     }
 }

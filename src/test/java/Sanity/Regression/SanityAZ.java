@@ -1,8 +1,8 @@
 package Sanity.Regression;
 
-import Start.DepositACH;
+import Start.RAW.DepositACH;
 import Start.DepositCC;
-import Start.LimitsGPT_B;
+import Start.RAW.LimitsGPT_B;
 import Start.RegistrationGPT;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
@@ -31,17 +31,17 @@ public class SanityAZ {
 
     @Test
     public void Registration() {
-        regi.RegistrationAZ_GPT();
+        regi.SignUp_GPT_Arizona();
     }
 
     @Test
     public void CCdeposit() {
-        cc.DepositCC_AZ();
+        cc.Deposit_CC_GPT_Arizona();
     }
 
     @Test
     public void ACHdeposit() {
-        ach.DepositACH_AZ();
+        ach.Deposit_ACH_GPT_Arizona();
     }
 
     @Test

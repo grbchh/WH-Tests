@@ -37,92 +37,103 @@ public class RegistrationGPT {
 
 
     @Test
-    public void RegistrationTN_GPT() {
-        open(run.getTnGpt());
+    public void SignUp_GPT_Tennesse() {
+        open(run.getTennesseGpt());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationVA_GPT() {
+    public void SignUp_GPT_Virginia() {
         open(run.getVaGpt());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationNJ_GPT() {
-        open(run.getNjGPT());
+    public void SignUp_GPT_NewJersey() {
+        open(run.getNewJerseyGpt());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationIN_GPT() {
-        open(run.getInGPT());
+    public void SignUp_GPT_Indiana() {
+        open(run.getIndianaGpt());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationCO_GPT() {
-        open(run.getCoGpt());
+    public void SignUp_GPT_Colorado() {
+        open(run.getColoradoGpt());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationWV_GPT() {
-        open(run.getWvGPT());
+    public void SignUp_GPT_WestVirginia() {
+        open(run.getWestVirginiaGpt());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationIA_GPT() {
+    public void SignUp_GPT_Iowa() {
         open(run.getIaGpt());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationMI_GPT() {
-        open(run.getMiGpt());
+    public void SignUp_GPT_Michigan() {
+        open(run.getMichiganGpt());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationIL_GPT(){
+    public void SignUp_GPT_Illinois(){
         open(run.getIlGpt());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationAZ_GPT() {
-        open(run.getAzGpt());
+    public void SignUp_GPT_Arizona() {
+        open(run.getArizonaGpt());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationLA_GPT() {
-        open(run.getLaGpt());
+    public void SignUp_GPT_Louisiana() {
+        open(run.getLouisianaGpt());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationNvGPT() {
-        open(run.getNvGpt());
+    public void SignUp_GPT_Nevada() {
+        open(run.getNevadaGpt());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationNyGPT() {
-        open(run.getNyGpt());
+    public void SignUp_GPT_NewYork() {
+        open(run.getNewYorkGpt());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationOnGPT() {
-        open(run.getOnGpt());
+    public void SignUp_GPT_Ontario() {
+        open(run.getOntarioGpt());
         RegistrationGPT.Flow();
     }
 
     @Test
-    public void RegistrationNVMGPT() {
-        open(run.getNVWGPT());
+    public void SignUp_GPT_NevadaM() {
+        open(run.getNevadaCsGpt());
+        RegistrationGPT.Flow();
+    }
+
+    @Test
+    public void SignUp_GPT_Wyoming() {
+        open(run.getWyomingGpt());
+        RegistrationGPT.Flow();
+    }
+    @Test
+    public void SignUp_GPT_Pensilvania() {
+        open(run.getPaGpt());
         RegistrationGPT.Flow();
     }
 }

@@ -1,4 +1,4 @@
-package Start;
+package Start.RAW;
 
 import Info.Links;
 import Sanity.BasicFLows.DocumentUpload.Upload;
@@ -38,7 +38,7 @@ public class LimitsGPT_B {
 
     @Test
     public void LimitsTN_GPT() {
-        open(run.getTnGpt());
+        open(run.getTennesseGpt());
         RegistrationGPT.FlowWithRandomUser();
         limits.Flow();
     }
@@ -52,28 +52,28 @@ public class LimitsGPT_B {
 
     @Test
     public void LimitsNJ_GPT() {
-        open(run.getNjGPT());
+        open(run.getNewJerseyGpt());
         RegistrationGPT.FlowWithRandomUser();
         limits.Flow();
     }
 
     @Test
     public void LimitsIN_GPT() {
-        open(run.getInGPT());
+        open(run.getIndianaGpt());
         RegistrationGPT.FlowWithRandomUser();
         limits.Flow();
     }
 
     @Test
     public void LimitsCO_GPT() {
-        open(run.getCoGpt());
+        open(run.getColoradoGpt());
         RegistrationGPT.FlowWithRandomUser();
         limits.Flow();
     }
 
     @Test
     public void LimitsWV_GPT() {
-        open(run.getWvGPT());
+        open(run.getWestVirginiaGpt());
         RegistrationGPT.FlowWithRandomUser();
         limits.Flow();
     }
@@ -87,7 +87,7 @@ public class LimitsGPT_B {
 
     @Test
     public void LimitsMI_GPT() {
-        open(run.getMiGpt());
+        open(run.getMichiganGpt());
         RegistrationGPT.FlowWithRandomUser();
         limits.Flow();
     }
@@ -101,42 +101,42 @@ public class LimitsGPT_B {
 
     @Test
     public void LimitsAZ_GPT() {
-        open(run.getAzGpt());
+        open(run.getArizonaGpt());
         RegistrationGPT.FlowWithRandomUser();
         limits.Flow();
     }
 
     @Test
     public void LimitsLA_GPT() {
-        open(run.getLaGpt());
+        open(run.getLouisianaGpt());
         RegistrationGPT.FlowWithRandomUser();
         limits.Flow();
     }
 
     @Test
     public void LimitsNvGPT() {
-        open(run.getNvGpt());
+        open(run.getNevadaGpt());
         RegistrationGPT.FlowWithRandomUser();
         limits.Flow();
     }
 
     @Test
     public void LimitsNyGPT() {
-        open(run.getNyGpt());
+        open(run.getNewYorkGpt());
         RegistrationGPT.FlowWithRandomUser();
         limits.Flow();
     }
 
     @Test
     public void LimitsOnGPT() {
-        open(run.getOnGpt());
+        open(run.getOntarioGpt());
         RegistrationGPT.FlowWithRandomUser();
         limits.Flow();
     }
 
     @Test
     public void LimitsNVMGPT() {
-        open(run.getNVWGPT());
+        open(run.getNevadaCsGpt());
         RegistrationGPT.FlowWithRandomUser();
         limits.Flow();
     }
