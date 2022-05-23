@@ -18,7 +18,6 @@ public class RegistrationGPT {
     Buttons Button = new Buttons();
     URL run = new URL();
     Creds Filler = new Creds();
-    Links link = new Links();
     RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
 
 
@@ -26,23 +25,13 @@ public class RegistrationGPT {
 
     @Test
     public void Flow() {
-        Configuration.reportsFolder = "C:\\Users\\oleksandrh\\Desktop\\Screenshototemporingho";
         System.out.println("Website opened, now looking for that two heckin' buttons..");
 
         //First Registration Page
         $(Button.getRegiButton()).shouldBe(Condition.enabled).click();
 
         //Name
-//        Filler.ACHGuyFP();
         Filler.RandomFP();
-//
-//        if (WebDriverRunner.url().equals(link.getNjGPT())){
-//            Filler.CandiceMmagentaFP();
-//            System.out.println("Hello, Candice!");
-//        }else{
-//            Filler.CoresCherylFP();
-//            System.out.println("Hello, Cores!");
-//        }
 
         //Email
         System.out.println("Typing email...");
@@ -94,14 +83,7 @@ public class RegistrationGPT {
         $(Button.getSecurityQuestionField2()).setValue(Creds.getAnswerSecurityQs1());
 
         //SSN & ADRESS
-//        Filler.ACHGuySP();
         Filler.RandomSP();
-
-//        if (WebDriverRunner.url().equals(link.getNjGPT())){
-//            Filler.CandiceMmagentaSP();
-//        }else{
-//            Filler.CoresCherylSP();
-//        }
 
         //Checkboxes
         $(Button.getAgreementCheckbox1()).click();

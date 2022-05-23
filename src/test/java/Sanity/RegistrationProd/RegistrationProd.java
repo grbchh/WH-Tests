@@ -93,6 +93,12 @@ public class RegistrationProd {
         $(Button.getAgreementCheckbox4()).click();
         System.out.println("Checkboxes ticked");
 
+//        //analogue
+//        for (int i=0; true;){
+//            if ()
+//        }
+
+
         // 1st tap
         $(Button.getFinishRegiButton()).shouldBe(Condition.enabled).click();
         System.out.println("Submit button pressed");

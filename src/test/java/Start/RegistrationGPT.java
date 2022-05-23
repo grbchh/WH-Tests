@@ -7,35 +7,24 @@ import Sanity.BasicFLows.Logout.Logout;
 import Sanity.BasicFLows.Login.Login;
 import Sanity.CreditCardDeposit.Deposit;
 import com.codeborne.selenide.Configuration;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.BasicConfigurator;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.WebDriver;
 
 import static com.codeborne.selenide.Selenide.open;
 
 public class RegistrationGPT {
     Sanity.RegistrationUAT.RegistrationGPT RegistrationGPT = new Sanity.RegistrationUAT.RegistrationGPT();
-    Logout logout = new Logout();
-    Deposit cc = new Deposit();
-    Login login = new Login();
-    Flow limits = new Flow();
+    Config config = new Config();
     Links run = new Links();
-    Sanity.OnlineBankongDeposit.Deposit pwmb = new Sanity.OnlineBankongDeposit.Deposit();
-    Sanity.ACHDeposit.Deposit ach = new Sanity.ACHDeposit.Deposit();
-    Upload upload = new Upload();
 
     @Before
     public void StartUp() {
-        Configuration.startMaximized = true;
-        Configuration.timeout = 60000;
-        Configuration.holdBrowserOpen = false;
-        Configuration.screenshots = true;
-        BasicConfigurator.configure();
-        Configuration.reportsFolder = "C:\\Users\\oleksandrh\\Desktop\\Screenshototemporingho";
-
+        config.Basic();
     }
-
-
+    
     @Test
     public void SignUp_GPT_Tennesse() {
         open(run.getTennesseGpt());
